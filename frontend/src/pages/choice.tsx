@@ -8,6 +8,7 @@ import { cn } from '../lib/utils'
 import { QueryApi } from '../api/api'
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert'
 import { Navigate } from 'react-router-dom';
+import { text } from 'stream/consumers'
 
 const frameworks = [
 	{
@@ -44,14 +45,20 @@ export default function Choice() {
 
 	const Submit = async () => {
 		console.log("The user has clicked submit, let's hope for the best!")
-		let promise = QueryApi({
-			"benefit": "PORADNIA STOMATOLOGICZNA",
-			"province": "07",
-			"locality": "WARSZAWA",
-		})
+		let query = { "benefit": benefitText, "province": provinceText, "locality": localityText }
+		let promise = QueryApi(query)
+		console.log("Sent query:", query)
 
 		setSent(true)
-		let result = await promise
+		let result = null
+		try {
+			result = await promise
+		} catch (e) {
+			console.log("Error! in submit, promise rejected")
+			setShowErr(true)
+			setErrMsg("Niele udało się pobrać danych z serwera")
+			return
+		}
 
 		if (!result) {
 			console.log("Error! in submit, null returned")
@@ -84,11 +91,11 @@ export default function Choice() {
 								{sent ? (<p> cos sie krynci tu </p>) : (
 									<div className="flex flex-col items-center justify-center">
 										<h1 className="text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
-										<ComboboxDemo />
+										<ComboboxDemo onChange={setBenefitText} />
 										<h1 className="text-2xl font-bold text-center text-text-default">Wybierz województwo</h1>
-										<ComboboxDemo />
+										<ComboboxDemo onChange={setProvinceText} />
 										<h1 className="h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
-										<ComboboxDemo />
+										<ComboboxDemo onChange={setLocalityText} />
 										<Button onClick={Submit}>Dalej</Button>
 									</div>
 								)}
@@ -100,19 +107,14 @@ export default function Choice() {
 	)
 }
 
-export function ComboboxDemo() {
+export function ComboboxDemo(props: any) {
 	const [open, setOpen] = React.useState(false)
 	const [value, setValue] = React.useState("")
 
 	return (
 		<Popover open={open} onOpenChange={setOpen}>
 			<PopoverTrigger asChild>
-				<Button
-					variant="outline"
-					role="combobox"
-					aria-expanded={open}
-					className="w-[200px] justify-between"
-				>
+				<Button variant="outline" role="combobox" aria-expanded={open} className="w-[200px] justify-between">
 					{value
 						? frameworks.find((framework) => framework.value === value)?.label
 						: "Select framework..."}
@@ -129,7 +131,9 @@ export function ComboboxDemo() {
 								key={framework.value}
 								value={framework.value}
 								onSelect={(currentValue) => {
-									setValue(currentValue === value ? "" : currentValue)
+									let changed = currentValue === value ? "" : currentValue
+									setValue(changed)
+									props.onChange(changed)
 									setOpen(false)
 								}}
 							>
