@@ -4,6 +4,7 @@ import requests
 import json
 from dataclasses import dataclass
 from http import HTTPStatus
+import csv
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -82,7 +83,6 @@ def index():
     data = json_obj["data"]
     for i in data:
        objects.append(Kolejka(i["attributes"]["provider"], i["attributes"]["place"], i["attributes"]["benefit"], i["attributes"]["address"], i["attributes"]["locality"], i["attributes"]["phone"], i["attributes"]["latitude"], i["attributes"]["longitude"], i["attributes"]["statistics"]["provider-data"]["awaiting"], i["attributes"]["statistics"]["provider-data"]["average-period"],i["attributes"]["dates"]["date-situation-as-at"], i["attributes"]["dates"]["date"]))
-
     #return render_template('index.html', errors=errors, objects=objects, pages=pages)
     return send_json(pages, objects)
 
@@ -92,6 +92,16 @@ def send_json(pages, objects):
     response = make_response(jsonify(result), HTTPStatus.OK)
     response.headers['Content-Type'] = 'application/json'
     return response
+
+@app.route('/api/cities', methods=['POST'])
+@cross_origin()
+def cities():
+    cities_list = []
+    with open('backend/wojewodztwa_miasta.csv', "r") as f:
+        data = csv.reader(f, delimiter=';')
+        for row in data:
+            cities_list.append([row[1].upper(),row[2]])
+    return cities_list
 
 if __name__ == '__main__':
     app.run(debug=True)
