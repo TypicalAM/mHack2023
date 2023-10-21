@@ -91,6 +91,7 @@ def index():
 def send_json(pages, objects):
     result = Output(objects, pages)
     response = make_response(jsonify(result), HTTPStatus.OK)
+    response.headers.add('Access-Control-Allow-Origin', '*')
     response.headers['Content-Type'] = 'application/json'
     return response
 
