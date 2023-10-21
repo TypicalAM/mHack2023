@@ -33,6 +33,10 @@ class Pages:
     first: str
     last: str
 
+@dataclass
+class Output:
+    objects: list[Kolejka]
+    pages: Pages
 
 @dataclass
 class Input:
@@ -81,7 +85,8 @@ def index():
 
 @app.route('/api/json', methods=['GET'])
 def send_json(pages, objects):
-    response = make_response(jsonify(pages, objects), HTTPStatus.OK)
+    result = Output(objects, pages)
+    response = make_response(jsonify(result), HTTPStatus.OK)
     response.headers['Content-Type'] = 'application/json'
     return response
 
