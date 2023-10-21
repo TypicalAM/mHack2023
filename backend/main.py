@@ -1,10 +1,13 @@
 from flask import Flask, request, jsonify, make_response
+from flask_cors import CORS, cross_origin
 import requests
 import json
 from dataclasses import dataclass
 from http import HTTPStatus
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 @dataclass
 class Kolejka:
     provider: str
@@ -47,6 +50,7 @@ class Input:
 objects=[]
 
 @app.route('/api', methods=['POST'])
+@cross_origin()
 def index():
     data = request.get_json()
     if not data:
