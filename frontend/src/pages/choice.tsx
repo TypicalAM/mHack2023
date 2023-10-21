@@ -8,30 +8,55 @@ import { cn } from '../lib/utils'
 import { QueryApi } from '../api/api'
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert'
 import { Navigate } from 'react-router-dom';
-import { text } from 'stream/consumers'
 
-const frameworks = [
-	{
-		value: "next.js",
-		label: "Next.js",
-	},
-	{
-		value: "sveltekit",
-		label: "SvelteKit",
-	},
-	{
-		value: "nuxt.js",
-		label: "Nuxt.js",
-	},
-	{
-		value: "remix",
-		label: "Remix",
-	},
-	{
-		value: "astro",
-		label: "Astro",
-	},
+// hashmap string -> string
+const codes: { [key: string]: string } = {
+	"dolnośląskie": "01",
+	"kujawsko-pomorskie": "02",
+	"lubelskie": "03",
+	"lubuskie": "04",
+	"łódzkie": "05",
+	"małopolskie": "06",
+	"mazowieckie": "07",
+	"opolskie": "08",
+	"podkarpackie": "09",
+	"podlaskie": "10",
+	"pomorskie": "11",
+	"śląskie": "12",
+	"świętokrzyskie": "13",
+	"warmińsko-mazurskie": "14",
+	"wielkopolskie": "15",
+	"zachodniopomorskie": "16"
+}
+
+const voivodeships = [
+	{ 'value': 'dolnośląskie', 'label': 'Dolnośląskie' },
+	{ 'value': 'kujawsko-pomorskie', 'label': 'Kujawsko-pomorskie' },
+	{ 'value': 'lubelskie', 'label': 'Lubelskie' },
+	{ 'value': 'lubuskie', 'label': 'Lubuskie' },
+	{ 'value': 'łódzkie', 'label': 'Łódzkie' },
+	{ 'value': 'małopolskie', 'label': 'Małopolskie' },
+	{ 'value': 'mazowieckie', 'label': 'Mazowieckie' },
+	{ 'value': 'opolskie', 'label': 'Opolskie' },
+	{ 'value': 'podkarpackie', 'label': 'Podkarpackie' },
+	{ 'value': 'podlaskie', 'label': 'Podlaskie' },
+	{ 'value': 'pomorskie', 'label': 'Pomorskie' },
+	{ 'value': 'śląskie', 'label': 'Śląskie' },
+	{ 'value': 'świętokrzyskie', 'label': 'Świętokrzyskie' },
+	{ 'value': 'warmińsko-mazurskie', 'label': 'Warmińsko-mazurskie' },
+	{ 'value': 'wielkopolskie', 'label': 'Wielkopolskie' },
+	{ 'value': 'zachodniopomorskie', 'label': 'Zachodniopomorskie' },
 ]
+
+interface item {
+	value: string
+	label: string
+}
+
+interface ComboProps {
+	onChange: (value: string) => void
+	data: item[]
+}
 
 export default function Choice() {
 	const [sent, setSent] = React.useState(false)
@@ -39,13 +64,30 @@ export default function Choice() {
 	const [errMsg, setErrMsg] = React.useState("")
 	const [redirect, setRedirect] = React.useState(false)
 
+	const [provinceData, setProvinceData] = React.useState(voivodeships)
+	const [localityData, setLocalities] = React.useState([] as any)
+	const [benefitData, setBenefits] = React.useState([] as any)
+
 	const [benefitText, setBenefitText] = React.useState("")
 	const [provinceText, setProvinceText] = React.useState("")
 	const [localityText, setLocalityText] = React.useState("")
 
+	React.useEffect(() => {
+		// Once the voivodeship is selected, we can fetch the cities
+		if (provinceText === "")
+			return
+
+		console.log(provinceText)
+		if (provinceText === "dolnośląskie") {
+			setLocalities([{ value: "wroclaw", label: "Wrocław" }])
+		}
+
+		console.log("Fetching localities for", provinceText)
+	}, [provinceText])
+
 	const Submit = async () => {
 		console.log("The user has clicked submit, let's hope for the best!")
-		let query = { "benefit": benefitText, "province": provinceText, "locality": localityText }
+		let query = { "benefit": benefitText, "province": codes[provinceText], "locality": localityText }
 		let promise = QueryApi(query)
 		console.log("Sent query:", query)
 
@@ -91,11 +133,11 @@ export default function Choice() {
 								{sent ? (<p> cos sie krynci tu </p>) : (
 									<div className="flex flex-col items-center justify-center">
 										<h1 className="text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
-										<ComboboxDemo onChange={setBenefitText} />
+										<ComboboxDemo onChange={setBenefitText} data={benefitData} />
 										<h1 className="text-2xl font-bold text-center text-text-default">Wybierz województwo</h1>
-										<ComboboxDemo onChange={setProvinceText} />
+										<ComboboxDemo onChange={setProvinceText} data={provinceData} />
 										<h1 className="h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
-										<ComboboxDemo onChange={setLocalityText} />
+										<ComboboxDemo onChange={setLocalityText} data={localityData} />
 										<Button onClick={Submit}>Dalej</Button>
 									</div>
 								)}
@@ -107,7 +149,7 @@ export default function Choice() {
 	)
 }
 
-export function ComboboxDemo(props: any) {
+export function ComboboxDemo(props: ComboProps) {
 	const [open, setOpen] = React.useState(false)
 	const [value, setValue] = React.useState("")
 
@@ -116,7 +158,7 @@ export function ComboboxDemo(props: any) {
 			<PopoverTrigger asChild>
 				<Button variant="outline" role="combobox" aria-expanded={open} className="w-[200px] justify-between">
 					{value
-						? frameworks.find((framework) => framework.value === value)?.label
+						? props.data.find((entry: item) => entry.value === value)?.label
 						: "Select framework..."}
 					<ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
 				</Button>
@@ -126,10 +168,10 @@ export function ComboboxDemo(props: any) {
 					<CommandInput placeholder="Search framework..." />
 					<CommandEmpty>No framework found.</CommandEmpty>
 					<CommandGroup>
-						{frameworks.map((framework) => (
+						{props.data.map((entry) => (
 							<CommandItem
-								key={framework.value}
-								value={framework.value}
+								key={entry.value}
+								value={entry.value}
 								onSelect={(currentValue) => {
 									let changed = currentValue === value ? "" : currentValue
 									setValue(changed)
@@ -140,10 +182,10 @@ export function ComboboxDemo(props: any) {
 								<Check
 									className={cn(
 										"mr-2 h-4 w-4",
-										value === framework.value ? "opacity-100" : "opacity-0"
+										value === entry.value ? "opacity-100" : "opacity-0"
 									)}
 								/>
-								{framework.label}
+								{entry.label}
 							</CommandItem>
 						))}
 					</CommandGroup>
