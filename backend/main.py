@@ -96,12 +96,9 @@ def send_json(pages, objects):
 @app.route('/api/cities', methods=['POST'])
 @cross_origin()
 def cities():
-    cities_list = []
-    with open('backend/wojewodztwa_miasta.csv', "r") as f:
-        data = csv.reader(f, delimiter=';')
-        for row in data:
-            cities_list.append([row[1].upper(),row[2]])
-    return cities_list
+    with open('backend/miasta_json.json', "r") as f:
+        cities = json.load(f)
+    return cities
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,2791 @@
+{    
+    "WOJEWODZTWO":[
+    {
+        "DOLNOŚLĄSKIE": [
+        {
+            "nazwa miasta": "BOLESŁAWIEC"
+        },
+        {
+            "nazwa miasta": "NOWOGRODZIEC"
+        },
+        {
+            "nazwa miasta": "BIELAWA"
+        },
+        {
+            "nazwa miasta": "DZIERŻONIÓW"
+        },
+        {
+            "nazwa miasta": "PIESZYCE"
+        },
+        {
+            "nazwa miasta": "PIŁAWA GÓRNA"
+        },
+        {
+            "nazwa miasta": "NIEMCZA"
+        },
+        {
+            "nazwa miasta": "GŁOGÓW"
+        },
+        {
+            "nazwa miasta": "GÓRA"
+        },
+        {
+            "nazwa miasta": "WĄSOSZ"
+        },
+        {
+            "nazwa miasta": "JAWOR"
+        },
+        {
+            "nazwa miasta": "BOLKÓW"
+        },
+        {
+            "nazwa miasta": "KARPACZ"
+        },
+        {
+            "nazwa miasta": "KOWARY"
+        },
+        {
+            "nazwa miasta": "PIECHOWICE"
+        },
+        {
+            "nazwa miasta": "SZKLARSKA PORĘBA"
+        },
+        {
+            "nazwa miasta": "KAMIENNA GÓRA"
+        },
+        {
+            "nazwa miasta": "LUBAWKA"
+        },
+        {
+            "nazwa miasta": "DUSZNIKI-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "KŁODZKO"
+        },
+        {
+            "nazwa miasta": "KUDOWA-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "NOWA RUDA"
+        },
+        {
+            "nazwa miasta": "POLANICA-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "BYSTRZYCA KŁODZKA"
+        },
+        {
+            "nazwa miasta": "LĄDEK-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "MIĘDZYLESIE"
+        },
+        {
+            "nazwa miasta": "RADKÓW"
+        },
+        {
+            "nazwa miasta": "STRONIE ŚLĄSKIE"
+        },
+        {
+            "nazwa miasta": "SZCZYTNA"
+        },
+        {
+            "nazwa miasta": "CHOJNÓW"
+        },
+        {
+            "nazwa miasta": "PROCHOWICE"
+        },
+        {
+            "nazwa miasta": "LUBAŃ"
+        },
+        {
+            "nazwa miasta": "ŚWIERADÓW-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "LEŚNA"
+        },
+        {
+            "nazwa miasta": "OLSZYNA"
+        },
+        {
+            "nazwa miasta": "LUBIN"
+        },
+        {
+            "nazwa miasta": "ŚCINAWA"
+        },
+        {
+            "nazwa miasta": "GRYFÓW ŚLĄSKI"
+        },
+        {
+            "nazwa miasta": "LUBOMIERZ"
+        },
+        {
+            "nazwa miasta": "LWÓWEK ŚLĄSKI"
+        },
+        {
+            "nazwa miasta": "MIRSK"
+        },
+        {
+            "nazwa miasta": "WLEŃ"
+        },
+        {
+            "nazwa miasta": "MILICZ"
+        },
+        {
+            "nazwa miasta": "OLEŚNICA"
+        },
+        {
+            "nazwa miasta": "BIERUTÓW"
+        },
+        {
+            "nazwa miasta": "MIĘDZYBÓRZ"
+        },
+        {
+            "nazwa miasta": "SYCÓW"
+        },
+        {
+            "nazwa miasta": "TWARDOGÓRA"
+        },
+        {
+            "nazwa miasta": "OŁAWA"
+        },
+        {
+            "nazwa miasta": "JELCZ-LASKOWICE"
+        },
+        {
+            "nazwa miasta": "CHOCIANÓW"
+        },
+        {
+            "nazwa miasta": "POLKOWICE"
+        },
+        {
+            "nazwa miasta": "PRZEMKÓW"
+        },
+        {
+            "nazwa miasta": "STRZELIN"
+        },
+        {
+            "nazwa miasta": "WIĄZÓW"
+        },
+        {
+            "nazwa miasta": "ŚRODA ŚLĄSKA"
+        },
+        {
+            "nazwa miasta": "ŚWIDNICA"
+        },
+        {
+            "nazwa miasta": "ŚWIEBODZICE"
+        },
+        {
+            "nazwa miasta": "JAWORZYNA ŚLĄSKA"
+        },
+        {
+            "nazwa miasta": "STRZEGOM"
+        },
+        {
+            "nazwa miasta": "ŻARÓW"
+        },
+        {
+            "nazwa miasta": "OBORNIKI ŚLĄSKIE"
+        },
+        {
+            "nazwa miasta": "PRUSICE"
+        },
+        {
+            "nazwa miasta": "TRZEBNICA"
+        },
+        {
+            "nazwa miasta": "ŻMIGRÓD"
+        },
+        {
+            "nazwa miasta": "BOGUSZÓW-GORCE"
+        },
+        {
+            "nazwa miasta": "JEDLINA-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "SZCZAWNO-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "GŁUSZYCA"
+        },
+        {
+            "nazwa miasta": "MIEROSZÓW"
+        },
+        {
+            "nazwa miasta": "BRZEG DOLNY"
+        },
+        {
+            "nazwa miasta": "WOŁÓW"
+        },
+        {
+            "nazwa miasta": "KĄTY WROCŁAWSKIE"
+        },
+        {
+            "nazwa miasta": "SOBÓTKA"
+        },
+        {
+            "nazwa miasta": "SIECHNICE"
+        },
+        {
+            "nazwa miasta": "BARDO"
+        },
+        {
+            "nazwa miasta": "ZĄBKOWICE ŚLĄSKIE"
+        },
+        {
+            "nazwa miasta": "ZIĘBICE"
+        },
+        {
+            "nazwa miasta": "ZŁOTY STOK"
+        },
+        {
+            "nazwa miasta": "ZAWIDÓW"
+        },
+        {
+            "nazwa miasta": "ZGORZELEC"
+        },
+        {
+            "nazwa miasta": "BOGATYNIA"
+        },
+        {
+            "nazwa miasta": "PIEŃSK"
+        },
+        {
+            "nazwa miasta": "WĘGLINIEC"
+        },
+        {
+            "nazwa miasta": "WOJCIESZÓW"
+        },
+        {
+            "nazwa miasta": "ZŁOTORYJA"
+        },
+        {
+            "nazwa miasta": "ŚWIERZAWA"
+        },
+        {
+            "nazwa miasta": "JELENIA GÓRA"
+        },
+        {
+            "nazwa miasta": "LEGNICA"
+        },
+        {
+            "nazwa miasta": "WROCŁAW"
+        },
+        {
+            "nazwa miasta": "WAŁBRZYCH"
+        }
+        ],
+        "KUJAWSKO-POMORSKIE": [
+        {
+            "nazwa miasta": "ALEKSANDRÓW KUJAWSKI"
+        },
+        {
+            "nazwa miasta": "CIECHOCINEK"
+        },
+        {
+            "nazwa miasta": "NIESZAWA"
+        },
+        {
+            "nazwa miasta": "BRODNICA"
+        },
+        {
+            "nazwa miasta": "GÓRZNO"
+        },
+        {
+            "nazwa miasta": "JABŁONOWO POMORSKIE"
+        },
+        {
+            "nazwa miasta": "KORONOWO"
+        },
+        {
+            "nazwa miasta": "SOLEC KUJAWSKI"
+        },
+        {
+            "nazwa miasta": "CHEŁMNO"
+        },
+        {
+            "nazwa miasta": "GOLUB-DOBRZYŃ"
+        },
+        {
+            "nazwa miasta": "KOWALEWO POMORSKIE"
+        },
+        {
+            "nazwa miasta": "ŁASIN"
+        },
+        {
+            "nazwa miasta": "RADZYŃ CHEŁMIŃSKI"
+        },
+        {
+            "nazwa miasta": "INOWROCŁAW"
+        },
+        {
+            "nazwa miasta": "GNIEWKOWO"
+        },
+        {
+            "nazwa miasta": "JANIKOWO"
+        },
+        {
+            "nazwa miasta": "KRUSZWICA"
+        },
+        {
+            "nazwa miasta": "PAKOŚĆ"
+        },
+        {
+            "nazwa miasta": "LIPNO"
+        },
+        {
+            "nazwa miasta": "DOBRZYŃ NAD WISŁĄ"
+        },
+        {
+            "nazwa miasta": "SKĘPE"
+        },
+        {
+            "nazwa miasta": "MOGILNO"
+        },
+        {
+            "nazwa miasta": "STRZELNO"
+        },
+        {
+            "nazwa miasta": "KCYNIA"
+        },
+        {
+            "nazwa miasta": "MROCZA"
+        },
+        {
+            "nazwa miasta": "NAKŁO NAD NOTECIĄ"
+        },
+        {
+            "nazwa miasta": "SZUBIN"
+        },
+        {
+            "nazwa miasta": "RADZIEJÓW"
+        },
+        {
+            "nazwa miasta": "PIOTRKÓW KUJAWSKI"
+        },
+        {
+            "nazwa miasta": "RYPIN"
+        },
+        {
+            "nazwa miasta": "KAMIEŃ KRAJEŃSKI"
+        },
+        {
+            "nazwa miasta": "SĘPÓLNO KRAJEŃSKIE"
+        },
+        {
+            "nazwa miasta": "WIĘCBORK"
+        },
+        {
+            "nazwa miasta": "NOWE"
+        },
+        {
+            "nazwa miasta": "ŚWIECIE"
+        },
+        {
+            "nazwa miasta": "CHEŁMŻA"
+        },
+        {
+            "nazwa miasta": "TUCHOLA"
+        },
+        {
+            "nazwa miasta": "WĄBRZEŹNO"
+        },
+        {
+            "nazwa miasta": "KOWAL"
+        },
+        {
+            "nazwa miasta": "BRZEŚĆ KUJAWSKI"
+        },
+        {
+            "nazwa miasta": "CHODECZ"
+        },
+        {
+            "nazwa miasta": "IZBICA KUJAWSKA"
+        },
+        {
+            "nazwa miasta": "LUBIEŃ KUJAWSKI"
+        },
+        {
+            "nazwa miasta": "LUBRANIEC"
+        },
+        {
+            "nazwa miasta": "BARCIN"
+        },
+        {
+            "nazwa miasta": "JANOWIEC WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "ŁABISZYN"
+        },
+        {
+            "nazwa miasta": "ŻNIN"
+        },
+        {
+            "nazwa miasta": "BYDGOSZCZ"
+        },
+        {
+            "nazwa miasta": "GRUDZIĄDZ"
+        },
+        {
+            "nazwa miasta": "TORUŃ"
+        },
+        {
+            "nazwa miasta": "WŁOCŁAWEK"
+        }
+        ],
+        "LUBELSKIE": [
+        {
+            "nazwa miasta": "MIĘDZYRZEC PODLASKI"
+        },
+        {
+            "nazwa miasta": "TERESPOL"
+        },
+        {
+            "nazwa miasta": "BIŁGORAJ"
+        },
+        {
+            "nazwa miasta": "FRAMPOL"
+        },
+        {
+            "nazwa miasta": "JÓZEFÓW"
+        },
+        {
+            "nazwa miasta": "TARNOGRÓD"
+        },
+        {
+            "nazwa miasta": "REJOWIEC FABRYCZNY"
+        },
+        {
+            "nazwa miasta": "SIEDLISZCZE"
+        },
+        {
+            "nazwa miasta": "HRUBIESZÓW"
+        },
+        {
+            "nazwa miasta": "JANÓW LUBELSKI"
+        },
+        {
+            "nazwa miasta": "MODLIBORZYCE"
+        },
+        {
+            "nazwa miasta": "KRASNYSTAW"
+        },
+        {
+            "nazwa miasta": "KRAŚNIK"
+        },
+        {
+            "nazwa miasta": "ANNOPOL"
+        },
+        {
+            "nazwa miasta": "URZĘDÓW"
+        },
+        {
+            "nazwa miasta": "LUBARTÓW"
+        },
+        {
+            "nazwa miasta": "KOCK"
+        },
+        {
+            "nazwa miasta": "OSTRÓW LUBELSKI"
+        },
+        {
+            "nazwa miasta": "BEŁŻYCE"
+        },
+        {
+            "nazwa miasta": "BYCHAWA"
+        },
+        {
+            "nazwa miasta": "ŁĘCZNA"
+        },
+        {
+            "nazwa miasta": "ŁUKÓW"
+        },
+        {
+            "nazwa miasta": "STOCZEK ŁUKOWSKI"
+        },
+        {
+            "nazwa miasta": "OPOLE LUBELSKIE"
+        },
+        {
+            "nazwa miasta": "PONIATOWA"
+        },
+        {
+            "nazwa miasta": "PARCZEW"
+        },
+        {
+            "nazwa miasta": "PUŁAWY"
+        },
+        {
+            "nazwa miasta": "KAZIMIERZ DOLNY"
+        },
+        {
+            "nazwa miasta": "NAŁĘCZÓW"
+        },
+        {
+            "nazwa miasta": "RADZYŃ PODLASKI"
+        },
+        {
+            "nazwa miasta": "DĘBLIN"
+        },
+        {
+            "nazwa miasta": "RYKI"
+        },
+        {
+            "nazwa miasta": "ŚWIDNIK"
+        },
+        {
+            "nazwa miasta": "PIASKI"
+        },
+        {
+            "nazwa miasta": "TOMASZÓW LUBELSKI"
+        },
+        {
+            "nazwa miasta": "LUBYCZA KRÓLEWSKA"
+        },
+        {
+            "nazwa miasta": "ŁASZCZÓW"
+        },
+        {
+            "nazwa miasta": "TYSZOWCE"
+        },
+        {
+            "nazwa miasta": "WŁODAWA"
+        },
+        {
+            "nazwa miasta": "KRASNOBRÓD"
+        },
+        {
+            "nazwa miasta": "SZCZEBRZESZYN"
+        },
+        {
+            "nazwa miasta": "ZWIERZYNIEC"
+        },
+        {
+            "nazwa miasta": "BIAŁA PODLASKA"
+        },
+        {
+            "nazwa miasta": "CHEŁM"
+        },
+        {
+            "nazwa miasta": "LUBLIN"
+        },
+        {
+            "nazwa miasta": "ZAMOŚĆ"
+        }
+        ],
+        "LUBUSKIE": [
+        {
+            "nazwa miasta": "KOSTRZYN NAD ODRĄ"
+        },
+        {
+            "nazwa miasta": "WITNICA"
+        },
+        {
+            "nazwa miasta": "GUBIN"
+        },
+        {
+            "nazwa miasta": "KROSNO ODRZAŃSKIE"
+        },
+        {
+            "nazwa miasta": "MIĘDZYRZECZ"
+        },
+        {
+            "nazwa miasta": "SKWIERZYNA"
+        },
+        {
+            "nazwa miasta": "TRZCIEL"
+        },
+        {
+            "nazwa miasta": "NOWA SÓL"
+        },
+        {
+            "nazwa miasta": "BYTOM ODRZAŃSKI"
+        },
+        {
+            "nazwa miasta": "KOŻUCHÓW"
+        },
+        {
+            "nazwa miasta": "NOWE MIASTECZKO"
+        },
+        {
+            "nazwa miasta": "CYBINKA"
+        },
+        {
+            "nazwa miasta": "OŚNO LUBUSKIE"
+        },
+        {
+            "nazwa miasta": "RZEPIN"
+        },
+        {
+            "nazwa miasta": "SŁUBICE"
+        },
+        {
+            "nazwa miasta": "DOBIEGNIEW"
+        },
+        {
+            "nazwa miasta": "DREZDENKO"
+        },
+        {
+            "nazwa miasta": "STRZELCE KRAJEŃSKIE"
+        },
+        {
+            "nazwa miasta": "LUBNIEWICE"
+        },
+        {
+            "nazwa miasta": "SULĘCIN"
+        },
+        {
+            "nazwa miasta": "TORZYM"
+        },
+        {
+            "nazwa miasta": "ŚWIEBODZIN"
+        },
+        {
+            "nazwa miasta": "ZBĄSZYNEK"
+        },
+        {
+            "nazwa miasta": "BABIMOST"
+        },
+        {
+            "nazwa miasta": "CZERWIEŃSK"
+        },
+        {
+            "nazwa miasta": "KARGOWA"
+        },
+        {
+            "nazwa miasta": "NOWOGRÓD BOBRZAŃSKI"
+        },
+        {
+            "nazwa miasta": "SULECHÓW"
+        },
+        {
+            "nazwa miasta": "GOZDNICA"
+        },
+        {
+            "nazwa miasta": "ŻAGAŃ"
+        },
+        {
+            "nazwa miasta": "IŁOWA"
+        },
+        {
+            "nazwa miasta": "MAŁOMICE"
+        },
+        {
+            "nazwa miasta": "SZPROTAWA"
+        },
+        {
+            "nazwa miasta": "ŁĘKNICA"
+        },
+        {
+            "nazwa miasta": "ŻARY"
+        },
+        {
+            "nazwa miasta": "JASIEŃ"
+        },
+        {
+            "nazwa miasta": "LUBSKO"
+        },
+        {
+            "nazwa miasta": "SŁAWA"
+        },
+        {
+            "nazwa miasta": "SZLICHTYNGOWA"
+        },
+        {
+            "nazwa miasta": "WSCHOWA"
+        },
+        {
+            "nazwa miasta": "GORZÓW WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "ZIELONA GÓRA"
+        }
+        ],
+        "ŁÓDZKIE": [
+        {
+            "nazwa miasta": "BEŁCHATÓW"
+        },
+        {
+            "nazwa miasta": "ZELÓW"
+        },
+        {
+            "nazwa miasta": "KUTNO"
+        },
+        {
+            "nazwa miasta": "KROŚNIEWICE"
+        },
+        {
+            "nazwa miasta": "ŻYCHLIN"
+        },
+        {
+            "nazwa miasta": "ŁASK"
+        },
+        {
+            "nazwa miasta": "ŁĘCZYCA"
+        },
+        {
+            "nazwa miasta": "ŁOWICZ"
+        },
+        {
+            "nazwa miasta": "KOLUSZKI"
+        },
+        {
+            "nazwa miasta": "RZGÓW"
+        },
+        {
+            "nazwa miasta": "TUSZYN"
+        },
+        {
+            "nazwa miasta": "DRZEWICA"
+        },
+        {
+            "nazwa miasta": "OPOCZNO"
+        },
+        {
+            "nazwa miasta": "KONSTANTYNÓW ŁÓDZKI"
+        },
+        {
+            "nazwa miasta": "PABIANICE"
+        },
+        {
+            "nazwa miasta": "DZIAŁOSZYN"
+        },
+        {
+            "nazwa miasta": "PAJĘCZNO"
+        },
+        {
+            "nazwa miasta": "SULEJÓW"
+        },
+        {
+            "nazwa miasta": "WOLBÓRZ"
+        },
+        {
+            "nazwa miasta": "PODDĘBICE"
+        },
+        {
+            "nazwa miasta": "UNIEJÓW"
+        },
+        {
+            "nazwa miasta": "RADOMSKO"
+        },
+        {
+            "nazwa miasta": "KAMIEŃSK"
+        },
+        {
+            "nazwa miasta": "PRZEDBÓRZ"
+        },
+        {
+            "nazwa miasta": "RAWA MAZOWIECKA"
+        },
+        {
+            "nazwa miasta": "BIAŁA RAWSKA"
+        },
+        {
+            "nazwa miasta": "SIERADZ"
+        },
+        {
+            "nazwa miasta": "BŁASZKI"
+        },
+        {
+            "nazwa miasta": "WARTA"
+        },
+        {
+            "nazwa miasta": "ZŁOCZEW"
+        },
+        {
+            "nazwa miasta": "TOMASZÓW MAZOWIECKI"
+        },
+        {
+            "nazwa miasta": "WIELUŃ"
+        },
+        {
+            "nazwa miasta": "WIERUSZÓW"
+        },
+        {
+            "nazwa miasta": "ZDUŃSKA WOLA"
+        },
+        {
+            "nazwa miasta": "SZADEK"
+        },
+        {
+            "nazwa miasta": "GŁOWNO"
+        },
+        {
+            "nazwa miasta": "OZORKÓW"
+        },
+        {
+            "nazwa miasta": "ZGIERZ"
+        },
+        {
+            "nazwa miasta": "ALEKSANDRÓW ŁÓDZKI"
+        },
+        {
+            "nazwa miasta": "STRYKÓW"
+        },
+        {
+            "nazwa miasta": "BRZEZINY"
+        },
+        {
+            "nazwa miasta": "ŁÓDŹ"
+        },
+        {
+            "nazwa miasta": "PIOTRKÓW TRYBUNALSKI"
+        },
+        {
+            "nazwa miasta": "SKIERNIEWICE"
+        }
+        ],
+        "MAŁOPOLSKIE": [
+        {
+            "nazwa miasta": "BOCHNIA"
+        },
+        {
+            "nazwa miasta": "NOWY WIŚNICZ"
+        },
+        {
+            "nazwa miasta": "BRZESKO"
+        },
+        {
+            "nazwa miasta": "CZCHÓW"
+        },
+        {
+            "nazwa miasta": "ALWERNIA"
+        },
+        {
+            "nazwa miasta": "CHRZANÓW"
+        },
+        {
+            "nazwa miasta": "LIBIĄŻ"
+        },
+        {
+            "nazwa miasta": "TRZEBINIA"
+        },
+        {
+            "nazwa miasta": "DĄBROWA TARNOWSKA"
+        },
+        {
+            "nazwa miasta": "SZCZUCIN"
+        },
+        {
+            "nazwa miasta": "GORLICE"
+        },
+        {
+            "nazwa miasta": "BIECZ"
+        },
+        {
+            "nazwa miasta": "BOBOWA"
+        },
+        {
+            "nazwa miasta": "KRZESZOWICE"
+        },
+        {
+            "nazwa miasta": "SKAŁA"
+        },
+        {
+            "nazwa miasta": "SKAWINA"
+        },
+        {
+            "nazwa miasta": "SŁOMNIKI"
+        },
+        {
+            "nazwa miasta": "ŚWIĄTNIKI GÓRNE"
+        },
+        {
+            "nazwa miasta": "LIMANOWA"
+        },
+        {
+            "nazwa miasta": "MSZANA DOLNA"
+        },
+        {
+            "nazwa miasta": "MIECHÓW"
+        },
+        {
+            "nazwa miasta": "DOBCZYCE"
+        },
+        {
+            "nazwa miasta": "MYŚLENICE"
+        },
+        {
+            "nazwa miasta": "SUŁKOWICE"
+        },
+        {
+            "nazwa miasta": "GRYBÓW"
+        },
+        {
+            "nazwa miasta": "KRYNICA-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "MUSZYNA"
+        },
+        {
+            "nazwa miasta": "PIWNICZNA-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "STARY SĄCZ"
+        },
+        {
+            "nazwa miasta": "NOWY TARG"
+        },
+        {
+            "nazwa miasta": "SZCZAWNICA"
+        },
+        {
+            "nazwa miasta": "RABKA-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "BUKOWNO"
+        },
+        {
+            "nazwa miasta": "OLKUSZ"
+        },
+        {
+            "nazwa miasta": "WOLBROM"
+        },
+        {
+            "nazwa miasta": "OŚWIĘCIM"
+        },
+        {
+            "nazwa miasta": "BRZESZCZE"
+        },
+        {
+            "nazwa miasta": "CHEŁMEK"
+        },
+        {
+            "nazwa miasta": "KĘTY"
+        },
+        {
+            "nazwa miasta": "ZATOR"
+        },
+        {
+            "nazwa miasta": "NOWE BRZESKO"
+        },
+        {
+            "nazwa miasta": "PROSZOWICE"
+        },
+        {
+            "nazwa miasta": "JORDANÓW"
+        },
+        {
+            "nazwa miasta": "SUCHA BESKIDZKA"
+        },
+        {
+            "nazwa miasta": "MAKÓW PODHALAŃSKI"
+        },
+        {
+            "nazwa miasta": "CIĘŻKOWICE"
+        },
+        {
+            "nazwa miasta": "RADŁÓW"
+        },
+        {
+            "nazwa miasta": "RYGLICE"
+        },
+        {
+            "nazwa miasta": "TUCHÓW"
+        },
+        {
+            "nazwa miasta": "WOJNICZ"
+        },
+        {
+            "nazwa miasta": "ZAKLICZYN"
+        },
+        {
+            "nazwa miasta": "ŻABNO"
+        },
+        {
+            "nazwa miasta": "ZAKOPANE"
+        },
+        {
+            "nazwa miasta": "ANDRYCHÓW"
+        },
+        {
+            "nazwa miasta": "KALWARIA ZEBRZYDOWSKA"
+        },
+        {
+            "nazwa miasta": "WADOWICE"
+        },
+        {
+            "nazwa miasta": "NIEPOŁOMICE"
+        },
+        {
+            "nazwa miasta": "WIELICZKA"
+        },
+        {
+            "nazwa miasta": "KRAKÓW"
+        },
+        {
+            "nazwa miasta": "NOWY SĄCZ"
+        },
+        {
+            "nazwa miasta": "TARNÓW"
+        }
+        ],
+        "MAZOWIECKIE": [
+        {
+            "nazwa miasta": "BIAŁOBRZEGI"
+        },
+        {
+            "nazwa miasta": "WYŚMIERZYCE"
+        },
+        {
+            "nazwa miasta": "CIECHANÓW"
+        },
+        {
+            "nazwa miasta": "GLINOJECK"
+        },
+        {
+            "nazwa miasta": "GARWOLIN"
+        },
+        {
+            "nazwa miasta": "ŁASKARZEW"
+        },
+        {
+            "nazwa miasta": "PILAWA"
+        },
+        {
+            "nazwa miasta": "ŻELECHÓW"
+        },
+        {
+            "nazwa miasta": "GOSTYNIN"
+        },
+        {
+            "nazwa miasta": "MILANÓWEK"
+        },
+        {
+            "nazwa miasta": "PODKOWA LEŚNA"
+        },
+        {
+            "nazwa miasta": "GRODZISK MAZOWIECKI"
+        },
+        {
+            "nazwa miasta": "GRÓJEC"
+        },
+        {
+            "nazwa miasta": "MOGIELNICA"
+        },
+        {
+            "nazwa miasta": "NOWE MIASTO NAD PILICĄ"
+        },
+        {
+            "nazwa miasta": "WARKA"
+        },
+        {
+            "nazwa miasta": "KOZIENICE"
+        },
+        {
+            "nazwa miasta": "LEGIONOWO"
+        },
+        {
+            "nazwa miasta": "SEROCK"
+        },
+        {
+            "nazwa miasta": "LIPSKO"
+        },
+        {
+            "nazwa miasta": "ŁOSICE"
+        },
+        {
+            "nazwa miasta": "MAKÓW MAZOWIECKI"
+        },
+        {
+            "nazwa miasta": "RÓŻAN"
+        },
+        {
+            "nazwa miasta": "MIŃSK MAZOWIECKI"
+        },
+        {
+            "nazwa miasta": "HALINÓW"
+        },
+        {
+            "nazwa miasta": "KAŁUSZYN"
+        },
+        {
+            "nazwa miasta": "MROZY"
+        },
+        {
+            "nazwa miasta": "SULEJÓWEK"
+        },
+        {
+            "nazwa miasta": "MŁAWA"
+        },
+        {
+            "nazwa miasta": "NOWY DWÓR MAZOWIECKI"
+        },
+        {
+            "nazwa miasta": "NASIELSK"
+        },
+        {
+            "nazwa miasta": "ZAKROCZYM"
+        },
+        {
+            "nazwa miasta": "MYSZYNIEC"
+        },
+        {
+            "nazwa miasta": "OSTRÓW MAZOWIECKA"
+        },
+        {
+            "nazwa miasta": "BROK"
+        },
+        {
+            "nazwa miasta": "JÓZEFÓW"
+        },
+        {
+            "nazwa miasta": "OTWOCK"
+        },
+        {
+            "nazwa miasta": "KARCZEW"
+        },
+        {
+            "nazwa miasta": "GÓRA KALWARIA"
+        },
+        {
+            "nazwa miasta": "KONSTANCIN-JEZIORNA"
+        },
+        {
+            "nazwa miasta": "PIASECZNO"
+        },
+        {
+            "nazwa miasta": "TARCZYN"
+        },
+        {
+            "nazwa miasta": "DROBIN"
+        },
+        {
+            "nazwa miasta": "GĄBIN"
+        },
+        {
+            "nazwa miasta": "WYSZOGRÓD"
+        },
+        {
+            "nazwa miasta": "PŁOŃSK"
+        },
+        {
+            "nazwa miasta": "RACIĄŻ"
+        },
+        {
+            "nazwa miasta": "PIASTÓW"
+        },
+        {
+            "nazwa miasta": "PRUSZKÓW"
+        },
+        {
+            "nazwa miasta": "BRWINÓW"
+        },
+        {
+            "nazwa miasta": "PRZASNYSZ"
+        },
+        {
+            "nazwa miasta": "CHORZELE"
+        },
+        {
+            "nazwa miasta": "PRZYSUCHA"
+        },
+        {
+            "nazwa miasta": "PUŁTUSK"
+        },
+        {
+            "nazwa miasta": "PIONKI"
+        },
+        {
+            "nazwa miasta": "IŁŻA"
+        },
+        {
+            "nazwa miasta": "SKARYSZEW"
+        },
+        {
+            "nazwa miasta": "MORDY"
+        },
+        {
+            "nazwa miasta": "SIERPC"
+        },
+        {
+            "nazwa miasta": "SOCHACZEW"
+        },
+        {
+            "nazwa miasta": "SOKOŁÓW PODLASKI"
+        },
+        {
+            "nazwa miasta": "KOSÓW LACKI"
+        },
+        {
+            "nazwa miasta": "SZYDŁOWIEC"
+        },
+        {
+            "nazwa miasta": "BŁONIE"
+        },
+        {
+            "nazwa miasta": "ŁOMIANKI"
+        },
+        {
+            "nazwa miasta": "OŻARÓW MAZOWIECKI"
+        },
+        {
+            "nazwa miasta": "WĘGRÓW"
+        },
+        {
+            "nazwa miasta": "ŁOCHÓW"
+        },
+        {
+            "nazwa miasta": "KOBYŁKA"
+        },
+        {
+            "nazwa miasta": "MARKI"
+        },
+        {
+            "nazwa miasta": "ZĄBKI"
+        },
+        {
+            "nazwa miasta": "ZIELONKA"
+        },
+        {
+            "nazwa miasta": "RADZYMIN"
+        },
+        {
+            "nazwa miasta": "TŁUSZCZ"
+        },
+        {
+            "nazwa miasta": "WOŁOMIN"
+        },
+        {
+            "nazwa miasta": "WYSZKÓW"
+        },
+        {
+            "nazwa miasta": "ZWOLEŃ"
+        },
+        {
+            "nazwa miasta": "BIEŻUŃ"
+        },
+        {
+            "nazwa miasta": "ŻUROMIN"
+        },
+        {
+            "nazwa miasta": "ŻYRARDÓW"
+        },
+        {
+            "nazwa miasta": "MSZCZONÓW"
+        },
+        {
+            "nazwa miasta": "OSTROŁĘKA"
+        },
+        {
+            "nazwa miasta": "PŁOCK"
+        },
+        {
+            "nazwa miasta": "RADOM"
+        },
+        {
+            "nazwa miasta": "SIEDLCE"
+        }
+        ],
+        "OPOLSKIE": [
+        {
+            "nazwa miasta": "BRZEG"
+        },
+        {
+            "nazwa miasta": "GRODKÓW"
+        },
+        {
+            "nazwa miasta": "LEWIN BRZESKI"
+        },
+        {
+            "nazwa miasta": "BABORÓW"
+        },
+        {
+            "nazwa miasta": "GŁUBCZYCE"
+        },
+        {
+            "nazwa miasta": "KIETRZ"
+        },
+        {
+            "nazwa miasta": "KĘDZIERZYN-KOŹLE"
+        },
+        {
+            "nazwa miasta": "BYCZYNA"
+        },
+        {
+            "nazwa miasta": "KLUCZBORK"
+        },
+        {
+            "nazwa miasta": "WOŁCZYN"
+        },
+        {
+            "nazwa miasta": "GOGOLIN"
+        },
+        {
+            "nazwa miasta": "KRAPKOWICE"
+        },
+        {
+            "nazwa miasta": "ZDZIESZOWICE"
+        },
+        {
+            "nazwa miasta": "NAMYSŁÓW"
+        },
+        {
+            "nazwa miasta": "GŁUCHOŁAZY"
+        },
+        {
+            "nazwa miasta": "KORFANTÓW"
+        },
+        {
+            "nazwa miasta": "NYSA"
+        },
+        {
+            "nazwa miasta": "OTMUCHÓW"
+        },
+        {
+            "nazwa miasta": "PACZKÓW"
+        },
+        {
+            "nazwa miasta": "DOBRODZIEŃ"
+        },
+        {
+            "nazwa miasta": "GORZÓW ŚLĄSKI"
+        },
+        {
+            "nazwa miasta": "OLESNO"
+        },
+        {
+            "nazwa miasta": "PRASZKA"
+        },
+        {
+            "nazwa miasta": "NIEMODLIN"
+        },
+        {
+            "nazwa miasta": "OZIMEK"
+        },
+        {
+            "nazwa miasta": "PRÓSZKÓW"
+        },
+        {
+            "nazwa miasta": "BIAŁA"
+        },
+        {
+            "nazwa miasta": "GŁOGÓWEK"
+        },
+        {
+            "nazwa miasta": "PRUDNIK"
+        },
+        {
+            "nazwa miasta": "KOLONOWSKIE"
+        },
+        {
+            "nazwa miasta": "LEŚNICA"
+        },
+        {
+            "nazwa miasta": "STRZELCE OPOLSKIE"
+        },
+        {
+            "nazwa miasta": "UJAZD"
+        },
+        {
+            "nazwa miasta": "ZAWADZKIE"
+        },
+        {
+            "nazwa miasta": "OPOLE"
+        }
+        ],
+        "PODKARPACKIE": [
+        {
+            "nazwa miasta": "USTRZYKI DOLNE"
+        },
+        {
+            "nazwa miasta": "BRZOZÓW"
+        },
+        {
+            "nazwa miasta": "DĘBICA"
+        },
+        {
+            "nazwa miasta": "BRZOSTEK"
+        },
+        {
+            "nazwa miasta": "PILZNO"
+        },
+        {
+            "nazwa miasta": "JAROSŁAW"
+        },
+        {
+            "nazwa miasta": "RADYMNO"
+        },
+        {
+            "nazwa miasta": "PRUCHNIK"
+        },
+        {
+            "nazwa miasta": "JASŁO"
+        },
+        {
+            "nazwa miasta": "KOŁACZYCE"
+        },
+        {
+            "nazwa miasta": "KOLBUSZOWA"
+        },
+        {
+            "nazwa miasta": "DUKLA"
+        },
+        {
+            "nazwa miasta": "IWONICZ-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "JEDLICZE"
+        },
+        {
+            "nazwa miasta": "RYMANÓW"
+        },
+        {
+            "nazwa miasta": "LEŻAJSK"
+        },
+        {
+            "nazwa miasta": "NOWA SARZYNA"
+        },
+        {
+            "nazwa miasta": "LUBACZÓW"
+        },
+        {
+            "nazwa miasta": "CIESZANÓW"
+        },
+        {
+            "nazwa miasta": "NAROL"
+        },
+        {
+            "nazwa miasta": "OLESZYCE"
+        },
+        {
+            "nazwa miasta": "ŁAŃCUT"
+        },
+        {
+            "nazwa miasta": "MIELEC"
+        },
+        {
+            "nazwa miasta": "PRZECŁAW"
+        },
+        {
+            "nazwa miasta": "RADOMYŚL WIELKI"
+        },
+        {
+            "nazwa miasta": "NISKO"
+        },
+        {
+            "nazwa miasta": "RUDNIK NAD SANEM"
+        },
+        {
+            "nazwa miasta": "ULANÓW"
+        },
+        {
+            "nazwa miasta": "PRZEWORSK"
+        },
+        {
+            "nazwa miasta": "KAŃCZUGA"
+        },
+        {
+            "nazwa miasta": "SIENIAWA"
+        },
+        {
+            "nazwa miasta": "ROPCZYCE"
+        },
+        {
+            "nazwa miasta": "SĘDZISZÓW MAŁOPOLSKI"
+        },
+        {
+            "nazwa miasta": "DYNÓW"
+        },
+        {
+            "nazwa miasta": "BŁAŻOWA"
+        },
+        {
+            "nazwa miasta": "BOGUCHWAŁA"
+        },
+        {
+            "nazwa miasta": "GŁOGÓW MAŁOPOLSKI"
+        },
+        {
+            "nazwa miasta": "SOKOŁÓW MAŁOPOLSKI"
+        },
+        {
+            "nazwa miasta": "TYCZYN"
+        },
+        {
+            "nazwa miasta": "SANOK"
+        },
+        {
+            "nazwa miasta": "ZAGÓRZ"
+        },
+        {
+            "nazwa miasta": "STALOWA WOLA"
+        },
+        {
+            "nazwa miasta": "ZAKLIKÓW"
+        },
+        {
+            "nazwa miasta": "STRZYŻÓW"
+        },
+        {
+            "nazwa miasta": "BARANÓW SANDOMIERSKI"
+        },
+        {
+            "nazwa miasta": "NOWA DĘBA"
+        },
+        {
+            "nazwa miasta": "LESKO"
+        },
+        {
+            "nazwa miasta": "KROSNO"
+        },
+        {
+            "nazwa miasta": "PRZEMYŚL"
+        },
+        {
+            "nazwa miasta": "RZESZÓW"
+        },
+        {
+            "nazwa miasta": "TARNOBRZEG"
+        }
+        ],
+        "PODLASKIE": [
+        {
+            "nazwa miasta": "AUGUSTÓW"
+        },
+        {
+            "nazwa miasta": "LIPSK"
+        },
+        {
+            "nazwa miasta": "CHOROSZCZ"
+        },
+        {
+            "nazwa miasta": "CZARNA BIAŁOSTOCKA"
+        },
+        {
+            "nazwa miasta": "ŁAPY"
+        },
+        {
+            "nazwa miasta": "MICHAŁOWO"
+        },
+        {
+            "nazwa miasta": "SUPRAŚL"
+        },
+        {
+            "nazwa miasta": "SURAŻ"
+        },
+        {
+            "nazwa miasta": "TYKOCIN"
+        },
+        {
+            "nazwa miasta": "WASILKÓW"
+        },
+        {
+            "nazwa miasta": "ZABŁUDÓW"
+        },
+        {
+            "nazwa miasta": "BIELSK PODLASKI"
+        },
+        {
+            "nazwa miasta": "BRAŃSK"
+        },
+        {
+            "nazwa miasta": "GRAJEWO"
+        },
+        {
+            "nazwa miasta": "RAJGRÓD"
+        },
+        {
+            "nazwa miasta": "SZCZUCZYN"
+        },
+        {
+            "nazwa miasta": "HAJNÓWKA"
+        },
+        {
+            "nazwa miasta": "KLESZCZELE"
+        },
+        {
+            "nazwa miasta": "KOLNO"
+        },
+        {
+            "nazwa miasta": "STAWISKI"
+        },
+        {
+            "nazwa miasta": "JEDWABNE"
+        },
+        {
+            "nazwa miasta": "NOWOGRÓD"
+        },
+        {
+            "nazwa miasta": "GONIĄDZ"
+        },
+        {
+            "nazwa miasta": "KNYSZYN"
+        },
+        {
+            "nazwa miasta": "MOŃKI"
+        },
+        {
+            "nazwa miasta": "SEJNY"
+        },
+        {
+            "nazwa miasta": "SIEMIATYCZE"
+        },
+        {
+            "nazwa miasta": "DROHICZYN"
+        },
+        {
+            "nazwa miasta": "DĄBROWA BIAŁOSTOCKA"
+        },
+        {
+            "nazwa miasta": "KRYNKI"
+        },
+        {
+            "nazwa miasta": "SOKÓŁKA"
+        },
+        {
+            "nazwa miasta": "SUCHOWOLA"
+        },
+        {
+            "nazwa miasta": "WYSOKIE MAZOWIECKIE"
+        },
+        {
+            "nazwa miasta": "CIECHANOWIEC"
+        },
+        {
+            "nazwa miasta": "CZYŻEW"
+        },
+        {
+            "nazwa miasta": "SZEPIETOWO"
+        },
+        {
+            "nazwa miasta": "ZAMBRÓW"
+        },
+        {
+            "nazwa miasta": "BIAŁYSTOK"
+        },
+        {
+            "nazwa miasta": "ŁOMŻA"
+        },
+        {
+            "nazwa miasta": "SUWAŁKI"
+        }
+        ],
+        "POMORSKIE": [
+        {
+            "nazwa miasta": "BYTÓW"
+        },
+        {
+            "nazwa miasta": "MIASTKO"
+        },
+        {
+            "nazwa miasta": "CHOJNICE"
+        },
+        {
+            "nazwa miasta": "BRUSY"
+        },
+        {
+            "nazwa miasta": "CZERSK"
+        },
+        {
+            "nazwa miasta": "CZŁUCHÓW"
+        },
+        {
+            "nazwa miasta": "CZARNE"
+        },
+        {
+            "nazwa miasta": "DEBRZNO"
+        },
+        {
+            "nazwa miasta": "PRUSZCZ GDAŃSKI"
+        },
+        {
+            "nazwa miasta": "KARTUZY"
+        },
+        {
+            "nazwa miasta": "ŻUKOWO"
+        },
+        {
+            "nazwa miasta": "KOŚCIERZYNA"
+        },
+        {
+            "nazwa miasta": "KWIDZYN"
+        },
+        {
+            "nazwa miasta": "PRABUTY"
+        },
+        {
+            "nazwa miasta": "LĘBORK"
+        },
+        {
+            "nazwa miasta": "ŁEBA"
+        },
+        {
+            "nazwa miasta": "MALBORK"
+        },
+        {
+            "nazwa miasta": "NOWY STAW"
+        },
+        {
+            "nazwa miasta": "KRYNICA MORSKA"
+        },
+        {
+            "nazwa miasta": "NOWY DWÓR GDAŃSKI"
+        },
+        {
+            "nazwa miasta": "HEL"
+        },
+        {
+            "nazwa miasta": "JASTARNIA"
+        },
+        {
+            "nazwa miasta": "PUCK"
+        },
+        {
+            "nazwa miasta": "WŁADYSŁAWOWO"
+        },
+        {
+            "nazwa miasta": "USTKA"
+        },
+        {
+            "nazwa miasta": "KĘPICE"
+        },
+        {
+            "nazwa miasta": "CZARNA WODA"
+        },
+        {
+            "nazwa miasta": "SKÓRCZ"
+        },
+        {
+            "nazwa miasta": "STAROGARD GDAŃSKI"
+        },
+        {
+            "nazwa miasta": "SKARSZEWY"
+        },
+        {
+            "nazwa miasta": "TCZEW"
+        },
+        {
+            "nazwa miasta": "GNIEW"
+        },
+        {
+            "nazwa miasta": "PELPLIN"
+        },
+        {
+            "nazwa miasta": "REDA"
+        },
+        {
+            "nazwa miasta": "RUMIA"
+        },
+        {
+            "nazwa miasta": "WEJHEROWO"
+        },
+        {
+            "nazwa miasta": "DZIERZGOŃ"
+        },
+        {
+            "nazwa miasta": "SZTUM"
+        },
+        {
+            "nazwa miasta": "GDAŃSK"
+        },
+        {
+            "nazwa miasta": "GDYNIA"
+        },
+        {
+            "nazwa miasta": "SŁUPSK"
+        },
+        {
+            "nazwa miasta": "SOPOT"
+        }
+        ],
+        "ŚLĄSKIE": [
+        {
+            "nazwa miasta": "BĘDZIN"
+        },
+        {
+            "nazwa miasta": "CZELADŹ"
+        },
+        {
+            "nazwa miasta": "WOJKOWICE"
+        },
+        {
+            "nazwa miasta": "SIEWIERZ"
+        },
+        {
+            "nazwa miasta": "SŁAWKÓW"
+        },
+        {
+            "nazwa miasta": "SZCZYRK"
+        },
+        {
+            "nazwa miasta": "CZECHOWICE-DZIEDZICE"
+        },
+        {
+            "nazwa miasta": "WILAMOWICE"
+        },
+        {
+            "nazwa miasta": "CIESZYN"
+        },
+        {
+            "nazwa miasta": "USTROŃ"
+        },
+        {
+            "nazwa miasta": "WISŁA"
+        },
+        {
+            "nazwa miasta": "SKOCZÓW"
+        },
+        {
+            "nazwa miasta": "STRUMIEŃ"
+        },
+        {
+            "nazwa miasta": "BLACHOWNIA"
+        },
+        {
+            "nazwa miasta": "KONIECPOL"
+        },
+        {
+            "nazwa miasta": "KNURÓW"
+        },
+        {
+            "nazwa miasta": "PYSKOWICE"
+        },
+        {
+            "nazwa miasta": "SOŚNICOWICE"
+        },
+        {
+            "nazwa miasta": "TOSZEK"
+        },
+        {
+            "nazwa miasta": "KŁOBUCK"
+        },
+        {
+            "nazwa miasta": "KRZEPICE"
+        },
+        {
+            "nazwa miasta": "LUBLINIEC"
+        },
+        {
+            "nazwa miasta": "WOŹNIKI"
+        },
+        {
+            "nazwa miasta": "ŁAZISKA GÓRNE"
+        },
+        {
+            "nazwa miasta": "MIKOŁÓW"
+        },
+        {
+            "nazwa miasta": "ORZESZE"
+        },
+        {
+            "nazwa miasta": "MYSZKÓW"
+        },
+        {
+            "nazwa miasta": "KOZIEGŁOWY"
+        },
+        {
+            "nazwa miasta": "ŻARKI"
+        },
+        {
+            "nazwa miasta": "PSZCZYNA"
+        },
+        {
+            "nazwa miasta": "RACIBÓRZ"
+        },
+        {
+            "nazwa miasta": "KRZANOWICE"
+        },
+        {
+            "nazwa miasta": "KUŹNIA RACIBORSKA"
+        },
+        {
+            "nazwa miasta": "CZERWIONKA-LESZCZYNY"
+        },
+        {
+            "nazwa miasta": "KALETY"
+        },
+        {
+            "nazwa miasta": "MIASTECZKO ŚLĄSKIE"
+        },
+        {
+            "nazwa miasta": "RADZIONKÓW"
+        },
+        {
+            "nazwa miasta": "TARNOWSKIE GÓRY"
+        },
+        {
+            "nazwa miasta": "BIERUŃ"
+        },
+        {
+            "nazwa miasta": "IMIELIN"
+        },
+        {
+            "nazwa miasta": "LĘDZINY"
+        },
+        {
+            "nazwa miasta": "PSZÓW"
+        },
+        {
+            "nazwa miasta": "RADLIN"
+        },
+        {
+            "nazwa miasta": "RYDUŁTOWY"
+        },
+        {
+            "nazwa miasta": "WODZISŁAW ŚLĄSKI"
+        },
+        {
+            "nazwa miasta": "PORĘBA"
+        },
+        {
+            "nazwa miasta": "ZAWIERCIE"
+        },
+        {
+            "nazwa miasta": "ŁAZY"
+        },
+        {
+            "nazwa miasta": "OGRODZIENIEC"
+        },
+        {
+            "nazwa miasta": "PILICA"
+        },
+        {
+            "nazwa miasta": "SZCZEKOCINY"
+        },
+        {
+            "nazwa miasta": "ŻYWIEC"
+        },
+        {
+            "nazwa miasta": "BIELSKO-BIAŁA"
+        },
+        {
+            "nazwa miasta": "BYTOM"
+        },
+        {
+            "nazwa miasta": "CHORZÓW"
+        },
+        {
+            "nazwa miasta": "CZĘSTOCHOWA"
+        },
+        {
+            "nazwa miasta": "DĄBROWA GÓRNICZA"
+        },
+        {
+            "nazwa miasta": "GLIWICE"
+        },
+        {
+            "nazwa miasta": "JASTRZĘBIE-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "JAWORZNO"
+        },
+        {
+            "nazwa miasta": "KATOWICE"
+        },
+        {
+            "nazwa miasta": "MYSŁOWICE"
+        },
+        {
+            "nazwa miasta": "PIEKARY ŚLĄSKIE"
+        },
+        {
+            "nazwa miasta": "RUDA ŚLĄSKA"
+        },
+        {
+            "nazwa miasta": "RYBNIK"
+        },
+        {
+            "nazwa miasta": "SIEMIANOWICE ŚLĄSKIE"
+        },
+        {
+            "nazwa miasta": "SOSNOWIEC"
+        },
+        {
+            "nazwa miasta": "ŚWIĘTOCHŁOWICE"
+        },
+        {
+            "nazwa miasta": "TYCHY"
+        },
+        {
+            "nazwa miasta": "ZABRZE"
+        },
+        {
+            "nazwa miasta": "ŻORY"
+        }
+        ],
+        "ŚWIĘTOKRZYSKIE": [
+        {
+            "nazwa miasta": "BUSKO-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "STOPNICA"
+        },
+        {
+            "nazwa miasta": "JĘDRZEJÓW"
+        },
+        {
+            "nazwa miasta": "MAŁOGOSZCZ"
+        },
+        {
+            "nazwa miasta": "SĘDZISZÓW"
+        },
+        {
+            "nazwa miasta": "KAZIMIERZA WIELKA"
+        },
+        {
+            "nazwa miasta": "SKALBMIERZ"
+        },
+        {
+            "nazwa miasta": "BODZENTYN"
+        },
+        {
+            "nazwa miasta": "CHĘCINY"
+        },
+        {
+            "nazwa miasta": "CHMIELNIK"
+        },
+        {
+            "nazwa miasta": "DALESZYCE"
+        },
+        {
+            "nazwa miasta": "KOŃSKIE"
+        },
+        {
+            "nazwa miasta": "STĄPORKÓW"
+        },
+        {
+            "nazwa miasta": "OPATÓW"
+        },
+        {
+            "nazwa miasta": "OŻARÓW"
+        },
+        {
+            "nazwa miasta": "OSTROWIEC ŚWIĘTOKRZYSKI"
+        },
+        {
+            "nazwa miasta": "ĆMIELÓW"
+        },
+        {
+            "nazwa miasta": "KUNÓW"
+        },
+        {
+            "nazwa miasta": "DZIAŁOSZYCE"
+        },
+        {
+            "nazwa miasta": "PIŃCZÓW"
+        },
+        {
+            "nazwa miasta": "SANDOMIERZ"
+        },
+        {
+            "nazwa miasta": "KOPRZYWNICA"
+        },
+        {
+            "nazwa miasta": "ZAWICHOST"
+        },
+        {
+            "nazwa miasta": "SKARŻYSKO-KAMIENNA"
+        },
+        {
+            "nazwa miasta": "SUCHEDNIÓW"
+        },
+        {
+            "nazwa miasta": "STARACHOWICE"
+        },
+        {
+            "nazwa miasta": "WĄCHOCK"
+        },
+        {
+            "nazwa miasta": "OSIEK"
+        },
+        {
+            "nazwa miasta": "POŁANIEC"
+        },
+        {
+            "nazwa miasta": "STASZÓW"
+        },
+        {
+            "nazwa miasta": "WŁOSZCZOWA"
+        },
+        {
+            "nazwa miasta": "KIELCE"
+        }
+        ],
+        "WARMIŃSKO-MAZURSKIE": [
+        {
+            "nazwa miasta": "BARTOSZYCE"
+        },
+        {
+            "nazwa miasta": "GÓROWO IŁAWECKIE"
+        },
+        {
+            "nazwa miasta": "BISZTYNEK"
+        },
+        {
+            "nazwa miasta": "SĘPOPOL"
+        },
+        {
+            "nazwa miasta": "BRANIEWO"
+        },
+        {
+            "nazwa miasta": "FROMBORK"
+        },
+        {
+            "nazwa miasta": "PIENIĘŻNO"
+        },
+        {
+            "nazwa miasta": "DZIAŁDOWO"
+        },
+        {
+            "nazwa miasta": "LIDZBARK"
+        },
+        {
+            "nazwa miasta": "MŁYNARY"
+        },
+        {
+            "nazwa miasta": "PASŁĘK"
+        },
+        {
+            "nazwa miasta": "TOLKMICKO"
+        },
+        {
+            "nazwa miasta": "EŁK"
+        },
+        {
+            "nazwa miasta": "GIŻYCKO"
+        },
+        {
+            "nazwa miasta": "RYN"
+        },
+        {
+            "nazwa miasta": "IŁAWA"
+        },
+        {
+            "nazwa miasta": "LUBAWA"
+        },
+        {
+            "nazwa miasta": "KISIELICE"
+        },
+        {
+            "nazwa miasta": "SUSZ"
+        },
+        {
+            "nazwa miasta": "ZALEWO"
+        },
+        {
+            "nazwa miasta": "KĘTRZYN"
+        },
+        {
+            "nazwa miasta": "KORSZE"
+        },
+        {
+            "nazwa miasta": "RESZEL"
+        },
+        {
+            "nazwa miasta": "LIDZBARK WARMIŃSKI"
+        },
+        {
+            "nazwa miasta": "ORNETA"
+        },
+        {
+            "nazwa miasta": "MRĄGOWO"
+        },
+        {
+            "nazwa miasta": "MIKOŁAJKI"
+        },
+        {
+            "nazwa miasta": "NIDZICA"
+        },
+        {
+            "nazwa miasta": "NOWE MIASTO LUBAWSKIE"
+        },
+        {
+            "nazwa miasta": "OLECKO"
+        },
+        {
+            "nazwa miasta": "BARCZEWO"
+        },
+        {
+            "nazwa miasta": "BISKUPIEC"
+        },
+        {
+            "nazwa miasta": "DOBRE MIASTO"
+        },
+        {
+            "nazwa miasta": "JEZIORANY"
+        },
+        {
+            "nazwa miasta": "OLSZTYNEK"
+        },
+        {
+            "nazwa miasta": "OSTRÓDA"
+        },
+        {
+            "nazwa miasta": "MIŁAKOWO"
+        },
+        {
+            "nazwa miasta": "MIŁOMŁYN"
+        },
+        {
+            "nazwa miasta": "MORĄG"
+        },
+        {
+            "nazwa miasta": "BIAŁA PISKA"
+        },
+        {
+            "nazwa miasta": "ORZYSZ"
+        },
+        {
+            "nazwa miasta": "PISZ"
+        },
+        {
+            "nazwa miasta": "RUCIANE-NIDA"
+        },
+        {
+            "nazwa miasta": "SZCZYTNO"
+        },
+        {
+            "nazwa miasta": "PASYM"
+        },
+        {
+            "nazwa miasta": "GOŁDAP"
+        },
+        {
+            "nazwa miasta": "WĘGORZEWO"
+        },
+        {
+            "nazwa miasta": "ELBLĄG"
+        },
+        {
+            "nazwa miasta": "OLSZTYN"
+        }
+        ],
+        "WIELKOPOLSKIE": [
+        {
+            "nazwa miasta": "CHODZIEŻ"
+        },
+        {
+            "nazwa miasta": "MARGONIN"
+        },
+        {
+            "nazwa miasta": "SZAMOCIN"
+        },
+        {
+            "nazwa miasta": "CZARNKÓW"
+        },
+        {
+            "nazwa miasta": "KRZYŻ WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "TRZCIANKA"
+        },
+        {
+            "nazwa miasta": "WIELEŃ"
+        },
+        {
+            "nazwa miasta": "GNIEZNO"
+        },
+        {
+            "nazwa miasta": "CZERNIEJEWO"
+        },
+        {
+            "nazwa miasta": "KŁECKO"
+        },
+        {
+            "nazwa miasta": "TRZEMESZNO"
+        },
+        {
+            "nazwa miasta": "WITKOWO"
+        },
+        {
+            "nazwa miasta": "BOREK WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "GOSTYŃ"
+        },
+        {
+            "nazwa miasta": "KROBIA"
+        },
+        {
+            "nazwa miasta": "POGORZELA"
+        },
+        {
+            "nazwa miasta": "PONIEC"
+        },
+        {
+            "nazwa miasta": "GRODZISK WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "RAKONIEWICE"
+        },
+        {
+            "nazwa miasta": "WIELICHOWO"
+        },
+        {
+            "nazwa miasta": "JARACZEWO"
+        },
+        {
+            "nazwa miasta": "JAROCIN"
+        },
+        {
+            "nazwa miasta": "ŻERKÓW"
+        },
+        {
+            "nazwa miasta": "STAWISZYN"
+        },
+        {
+            "nazwa miasta": "KĘPNO"
+        },
+        {
+            "nazwa miasta": "KOŁO"
+        },
+        {
+            "nazwa miasta": "DĄBIE"
+        },
+        {
+            "nazwa miasta": "KŁODAWA"
+        },
+        {
+            "nazwa miasta": "PRZEDECZ"
+        },
+        {
+            "nazwa miasta": "GOLINA"
+        },
+        {
+            "nazwa miasta": "KLECZEW"
+        },
+        {
+            "nazwa miasta": "RYCHWAŁ"
+        },
+        {
+            "nazwa miasta": "SOMPOLNO"
+        },
+        {
+            "nazwa miasta": "ŚLESIN"
+        },
+        {
+            "nazwa miasta": "KOŚCIAN"
+        },
+        {
+            "nazwa miasta": "CZEMPIŃ"
+        },
+        {
+            "nazwa miasta": "KRZYWIŃ"
+        },
+        {
+            "nazwa miasta": "ŚMIGIEL"
+        },
+        {
+            "nazwa miasta": "SULMIERZYCE"
+        },
+        {
+            "nazwa miasta": "KOBYLIN"
+        },
+        {
+            "nazwa miasta": "KOŹMIN WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "KROTOSZYN"
+        },
+        {
+            "nazwa miasta": "ZDUNY"
+        },
+        {
+            "nazwa miasta": "OSIECZNA"
+        },
+        {
+            "nazwa miasta": "RYDZYNA"
+        },
+        {
+            "nazwa miasta": "MIĘDZYCHÓD"
+        },
+        {
+            "nazwa miasta": "SIERAKÓW"
+        },
+        {
+            "nazwa miasta": "LWÓWEK"
+        },
+        {
+            "nazwa miasta": "NOWY TOMYŚL"
+        },
+        {
+            "nazwa miasta": "OPALENICA"
+        },
+        {
+            "nazwa miasta": "ZBĄSZYŃ"
+        },
+        {
+            "nazwa miasta": "OBORNIKI"
+        },
+        {
+            "nazwa miasta": "ROGOŹNO"
+        },
+        {
+            "nazwa miasta": "OSTRÓW WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "NOWE SKALMIERZYCE"
+        },
+        {
+            "nazwa miasta": "ODOLANÓW"
+        },
+        {
+            "nazwa miasta": "RASZKÓW"
+        },
+        {
+            "nazwa miasta": "GRABÓW NAD PROSNĄ"
+        },
+        {
+            "nazwa miasta": "MIKSTAT"
+        },
+        {
+            "nazwa miasta": "OSTRZESZÓW"
+        },
+        {
+            "nazwa miasta": "PIŁA"
+        },
+        {
+            "nazwa miasta": "ŁOBŻENICA"
+        },
+        {
+            "nazwa miasta": "UJŚCIE"
+        },
+        {
+            "nazwa miasta": "WYRZYSK"
+        },
+        {
+            "nazwa miasta": "WYSOKA"
+        },
+        {
+            "nazwa miasta": "CHOCZ"
+        },
+        {
+            "nazwa miasta": "DOBRZYCA"
+        },
+        {
+            "nazwa miasta": "PLESZEW"
+        },
+        {
+            "nazwa miasta": "LUBOŃ"
+        },
+        {
+            "nazwa miasta": "PUSZCZYKOWO"
+        },
+        {
+            "nazwa miasta": "BUK"
+        },
+        {
+            "nazwa miasta": "KOSTRZYN"
+        },
+        {
+            "nazwa miasta": "KÓRNIK"
+        },
+        {
+            "nazwa miasta": "MOSINA"
+        },
+        {
+            "nazwa miasta": "MUROWANA GOŚLINA"
+        },
+        {
+            "nazwa miasta": "POBIEDZISKA"
+        },
+        {
+            "nazwa miasta": "STĘSZEW"
+        },
+        {
+            "nazwa miasta": "SWARZĘDZ"
+        },
+        {
+            "nazwa miasta": "BOJANOWO"
+        },
+        {
+            "nazwa miasta": "JUTROSIN"
+        },
+        {
+            "nazwa miasta": "MIEJSKA GÓRKA"
+        },
+        {
+            "nazwa miasta": "RAWICZ"
+        },
+        {
+            "nazwa miasta": "SŁUPCA"
+        },
+        {
+            "nazwa miasta": "ZAGÓRÓW"
+        },
+        {
+            "nazwa miasta": "OBRZYCKO"
+        },
+        {
+            "nazwa miasta": "OSTRORÓG"
+        },
+        {
+            "nazwa miasta": "PNIEWY"
+        },
+        {
+            "nazwa miasta": "SZAMOTUŁY"
+        },
+        {
+            "nazwa miasta": "WRONKI"
+        },
+        {
+            "nazwa miasta": "ŚRODA WIELKOPOLSKA"
+        },
+        {
+            "nazwa miasta": "DOLSK"
+        },
+        {
+            "nazwa miasta": "KSIĄŻ WIELKOPOLSKI"
+        },
+        {
+            "nazwa miasta": "ŚREM"
+        },
+        {
+            "nazwa miasta": "TUREK"
+        },
+        {
+            "nazwa miasta": "DOBRA"
+        },
+        {
+            "nazwa miasta": "TULISZKÓW"
+        },
+        {
+            "nazwa miasta": "WĄGROWIEC"
+        },
+        {
+            "nazwa miasta": "GOŁAŃCZ"
+        },
+        {
+            "nazwa miasta": "SKOKI"
+        },
+        {
+            "nazwa miasta": "WOLSZTYN"
+        },
+        {
+            "nazwa miasta": "MIŁOSŁAW"
+        },
+        {
+            "nazwa miasta": "NEKLA"
+        },
+        {
+            "nazwa miasta": "PYZDRY"
+        },
+        {
+            "nazwa miasta": "WRZEŚNIA"
+        },
+        {
+            "nazwa miasta": "ZŁOTÓW"
+        },
+        {
+            "nazwa miasta": "JASTROWIE"
+        },
+        {
+            "nazwa miasta": "KRAJENKA"
+        },
+        {
+            "nazwa miasta": "OKONEK"
+        },
+        {
+            "nazwa miasta": "KALISZ"
+        },
+        {
+            "nazwa miasta": "KONIN"
+        },
+        {
+            "nazwa miasta": "LESZNO"
+        },
+        {
+            "nazwa miasta": "POZNAŃ"
+        }
+        ],
+        "ZACHODNIOPOMORSKIE": [
+        {
+            "nazwa miasta": "BIAŁOGARD"
+        },
+        {
+            "nazwa miasta": "KARLINO"
+        },
+        {
+            "nazwa miasta": "TYCHOWO"
+        },
+        {
+            "nazwa miasta": "CHOSZCZNO"
+        },
+        {
+            "nazwa miasta": "DRAWNO"
+        },
+        {
+            "nazwa miasta": "PEŁCZYCE"
+        },
+        {
+            "nazwa miasta": "RECZ"
+        },
+        {
+            "nazwa miasta": "CZAPLINEK"
+        },
+        {
+            "nazwa miasta": "DRAWSKO POMORSKIE"
+        },
+        {
+            "nazwa miasta": "KALISZ POMORSKI"
+        },
+        {
+            "nazwa miasta": "ZŁOCIENIEC"
+        },
+        {
+            "nazwa miasta": "GOLENIÓW"
+        },
+        {
+            "nazwa miasta": "MASZEWO"
+        },
+        {
+            "nazwa miasta": "NOWOGARD"
+        },
+        {
+            "nazwa miasta": "STEPNICA"
+        },
+        {
+            "nazwa miasta": "GRYFICE"
+        },
+        {
+            "nazwa miasta": "PŁOTY"
+        },
+        {
+            "nazwa miasta": "TRZEBIATÓW"
+        },
+        {
+            "nazwa miasta": "CEDYNIA"
+        },
+        {
+            "nazwa miasta": "CHOJNA"
+        },
+        {
+            "nazwa miasta": "GRYFINO"
+        },
+        {
+            "nazwa miasta": "MIESZKOWICE"
+        },
+        {
+            "nazwa miasta": "MORYŃ"
+        },
+        {
+            "nazwa miasta": "TRZCIŃSKO-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "DZIWNÓW"
+        },
+        {
+            "nazwa miasta": "GOLCZEWO"
+        },
+        {
+            "nazwa miasta": "KAMIEŃ POMORSKI"
+        },
+        {
+            "nazwa miasta": "MIĘDZYZDROJE"
+        },
+        {
+            "nazwa miasta": "WOLIN"
+        },
+        {
+            "nazwa miasta": "KOŁOBRZEG"
+        },
+        {
+            "nazwa miasta": "GOŚCINO"
+        },
+        {
+            "nazwa miasta": "BOBOLICE"
+        },
+        {
+            "nazwa miasta": "POLANÓW"
+        },
+        {
+            "nazwa miasta": "SIANÓW"
+        },
+        {
+            "nazwa miasta": "BARLINEK"
+        },
+        {
+            "nazwa miasta": "DĘBNO"
+        },
+        {
+            "nazwa miasta": "MYŚLIBÓRZ"
+        },
+        {
+            "nazwa miasta": "NOWE WARPNO"
+        },
+        {
+            "nazwa miasta": "POLICE"
+        },
+        {
+            "nazwa miasta": "LIPIANY"
+        },
+        {
+            "nazwa miasta": "PYRZYCE"
+        },
+        {
+            "nazwa miasta": "DARŁOWO"
+        },
+        {
+            "nazwa miasta": "SŁAWNO"
+        },
+        {
+            "nazwa miasta": "STARGARD"
+        },
+        {
+            "nazwa miasta": "CHOCIWEL"
+        },
+        {
+            "nazwa miasta": "DOBRZANY"
+        },
+        {
+            "nazwa miasta": "IŃSKO"
+        },
+        {
+            "nazwa miasta": "SUCHAŃ"
+        },
+        {
+            "nazwa miasta": "SZCZECINEK"
+        },
+        {
+            "nazwa miasta": "BARWICE"
+        },
+        {
+            "nazwa miasta": "BIAŁY BÓR"
+        },
+        {
+            "nazwa miasta": "BORNE SULINOWO"
+        },
+        {
+            "nazwa miasta": "ŚWIDWIN"
+        },
+        {
+            "nazwa miasta": "POŁCZYN-ZDRÓJ"
+        },
+        {
+            "nazwa miasta": "WAŁCZ"
+        },
+        {
+            "nazwa miasta": "CZŁOPA"
+        },
+        {
+            "nazwa miasta": "MIROSŁAWIEC"
+        },
+        {
+            "nazwa miasta": "TUCZNO"
+        },
+        {
+            "nazwa miasta": "DOBRA"
+        },
+        {
+            "nazwa miasta": "ŁOBEZ"
+        },
+        {
+            "nazwa miasta": "RESKO"
+        },
+        {
+            "nazwa miasta": "WĘGORZYNO"
+        },
+        {
+            "nazwa miasta": "KOSZALIN"
+        },
+        {
+            "nazwa miasta": "SZCZECIN"
+        },
+        {
+            "nazwa miasta": "ŚWINOUJŚCIE"
+        }
+        ]
+    }]
+}
