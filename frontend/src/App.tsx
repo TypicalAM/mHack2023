@@ -7,7 +7,7 @@ import Result from './pages/result';
 const router = createBrowserRouter([
 	{ path: "/", element: <Home /> },
 	{ path: "/choice", element: <Choice /> },
-	{ path: "/result", element: <Result /> }
+	{ path: "/result", element: <Result /> },
 ]);
 
 export default function App() {
