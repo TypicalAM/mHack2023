@@ -7,6 +7,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popove
 import { cn } from '../lib/utils'
 import { QueryApi } from '../api/api'
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert'
+import { Navigate } from 'react-router-dom';
 
 const frameworks = [
 	{
@@ -35,54 +36,66 @@ export default function Choice() {
 	const [sent, setSent] = React.useState(false)
 	const [showErr, setShowErr] = React.useState(false)
 	const [errMsg, setErrMsg] = React.useState("")
+	const [redirect, setRedirect] = React.useState(false)
 
 	const [benefitText, setBenefitText] = React.useState("")
 	const [provinceText, setProvinceText] = React.useState("")
 	const [localityText, setLocalityText] = React.useState("")
 
-	const Submit = () => {
+	const Submit = async () => {
 		console.log("The user has clicked submit, let's hope for the best!")
-		let result = QueryApi({
-			"benefit": benefitText,
-			"province": provinceText,
-			"locality": localityText,
+		let promise = QueryApi({
+			"benefit": "PORADNIA STOMATOLOGICZNA",
+			"province": "07",
+			"locality": "WARSZAWA",
 		})
+
+		setSent(true)
+		let result = await promise
 
 		if (!result) {
 			console.log("Error! in submit, null returned")
 			setShowErr(true)
 			setErrMsg("Nie udało się pobrać danych z serwera")
 			return
+		} else {
+			console.log("Received result in choice!:", result)
+			setRedirect(true)
 		}
-
-		console.log(result)
-		setSent(true)
 	}
 
 	return (
-		<main className="w-full h-full flex flex-col items-center justify-center">
-			{showErr} && (
-			<Alert>
-				<Terminal className="h-4 w-4" />
-				<AlertTitle>Heads up!</AlertTitle>
-				<AlertDescription>
-					{errMsg}
-				</AlertDescription>
-			</Alert>
-			) || (
-			{sent} && (
-			<p>cos sie krynci tu </p>
-			) || (
-			<div className="flex flex-col items-center justify-center">
-				<h1 className="text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
-				<ComboboxDemo />
-				<h1 className="text-2xl font-bold text-center text-text-default">Wybierz województwo</h1>
-				<ComboboxDemo />
-				<h1 className="h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
-				<ComboboxDemo />
-				<Button onClick={Submit}>Dalej</Button>
-			</div>
-			)
+		<main>
+			{
+				redirect ? (
+					<Navigate to="/result" />
+				) : (
+					<div className="w-full h-full flex flex-col items-center justify-center">
+						{showErr ? (
+							<Alert>
+								<Terminal className="h-4 w-4" />
+								<AlertTitle>Heads up!</AlertTitle>
+								<AlertDescription>
+									{errMsg}
+								</AlertDescription>
+							</Alert >
+						) : (
+							<div>
+								{sent ? (<p> cos sie krynci tu </p>) : (
+									<div className="flex flex-col items-center justify-center">
+										<h1 className="text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
+										<ComboboxDemo />
+										<h1 className="text-2xl font-bold text-center text-text-default">Wybierz województwo</h1>
+										<ComboboxDemo />
+										<h1 className="h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
+										<ComboboxDemo />
+										<Button onClick={Submit}>Dalej</Button>
+									</div>
+								)}
+							</div>
+						)}
+					</div>
+				)}
 		</main>
 	)
 }

@@ -85,15 +85,15 @@ export function DeleteLocalCopy(): void {
 }
 
 
-export function QueryApi(input: Query): Promise<ApiResult | null> {
+export async function QueryApi(input: Query): Promise<ApiResult | null> {
 	const url = 'http://localhost:5000/api'
 	let requestOptions = {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
-		body: JSON.stringify(input)
+		body: JSON.stringify(input),
 	}
 
-	let result = fetch(url, requestOptions).then(response => {
+	return fetch(url, requestOptions).then(response => {
 		if (!response.ok)
 			throw new Error('Network response was not ok')
 
@@ -112,9 +112,6 @@ export function QueryApi(input: Query): Promise<ApiResult | null> {
 		console.error('There has been a problem with your fetch operation:', error)
 		throw new Error('There has been a problem with your fetch operation')
 	})
-
-	console.log(result)
-	return result
 }
 
 const clearlyFakeResult = {
