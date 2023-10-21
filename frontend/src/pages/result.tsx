@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { GetLocalCopyFake } from '../api/api'
+import { GetLocalCopy, GetLocalCopyFake } from '../api/api'
 import DisplayResults from './../components/display'
 
 export default function Result() {
@@ -14,7 +14,7 @@ export default function Result() {
 	return (
 		<main className="bg-back-layer-1 h-screen w-screen flex-col items-center justify-center">
 			<h1 className="text-4xl text-center py-8">Wyniki wyszukiwania</h1>
-			<DisplayResults {...GetLocalCopyFake()!} />
+			<DisplayResults {...GetLocalCopy()!} />
 		</main>
 	)
 }

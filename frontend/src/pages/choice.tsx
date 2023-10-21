@@ -1,9 +1,12 @@
 import { CommandEmpty, CommandGroup, CommandInput, CommandItem } from 'cmdk'
-import { Check, ChevronsUpDown, Command } from 'lucide-react'
+import { Check, ChevronsUpDown, Terminal } from 'lucide-react'
+import { Command } from '../components/ui/command'
 import React from 'react'
 import { Button } from '../components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover'
 import { cn } from '../lib/utils'
+import { QueryApi } from '../api/api'
+import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert'
 
 const frameworks = [
 	{
@@ -29,9 +32,47 @@ const frameworks = [
 ]
 
 export default function Choice() {
+	const [sent, setSent] = React.useState(false)
+	const [showErr, setShowErr] = React.useState(false)
+	const [errMsg, setErrMsg] = React.useState("")
+
+	const [benefitText, setBenefitText] = React.useState("")
+	const [provinceText, setProvinceText] = React.useState("")
+	const [localityText, setLocalityText] = React.useState("")
+
+	const Submit = () => {
+		console.log("The user has clicked submit, let's hope for the best!")
+		let result = QueryApi({
+			"benefit": benefitText,
+			"province": provinceText,
+			"locality": localityText,
+		})
+
+		if (!result) {
+			console.log("Error! in submit, null returned")
+			setShowErr(true)
+			setErrMsg("Nie udało się pobrać danych z serwera")
+			return
+		}
+
+		console.log(result)
+		setSent(true)
+	}
+
 	return (
 		<main className="w-full h-full flex flex-col items-center justify-center">
-
+			{showErr} && (
+			<Alert>
+				<Terminal className="h-4 w-4" />
+				<AlertTitle>Heads up!</AlertTitle>
+				<AlertDescription>
+					{errMsg}
+				</AlertDescription>
+			</Alert>
+			) || (
+			{sent} && (
+			<p>cos sie krynci tu </p>
+			) || (
 			<div className="flex flex-col items-center justify-center">
 				<h1 className="text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
 				<ComboboxDemo />
@@ -39,8 +80,9 @@ export default function Choice() {
 				<ComboboxDemo />
 				<h1 className="h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
 				<ComboboxDemo />
-				<Button>Dalej</Button>
+				<Button onClick={Submit}>Dalej</Button>
 			</div>
+			)
 		</main>
 	)
 }
