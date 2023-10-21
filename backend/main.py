@@ -48,6 +48,10 @@ class Input:
     province: str
     locality: str
 
+@dataclass
+class InputBenefit:
+    benefit_letters: str
+
 objects=[]
 
 @app.route('/api', methods=['POST'])
@@ -96,9 +100,23 @@ def send_json(pages, objects):
 @app.route('/api/cities', methods=['POST'])
 @cross_origin()
 def cities():
-    with open('backend/miasta_json.json', "r") as f:
-        cities = json.load(f)
+    with open('backend/wojewodztwa_miasta.csv', newline='') as csvfile:
+        reader = csv.reader(csvfile, delimiter=';')
+        cities = []
+        for row in reader:
+            cities.append([row[1], row[2]])
+        
+
     return cities
+
+@app.route('/api/benefits', methods=['POST'])
+@cross_origin()
+def benefits():
+    
+        
+
+    return benefits
+
 
 if __name__ == '__main__':
     app.run(debug=True)
