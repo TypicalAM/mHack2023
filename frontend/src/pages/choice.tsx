@@ -96,7 +96,6 @@ export default function Choice() {
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
 				"region": voivodeship,
-				"query": "s", // TODO: remove
 			}),
 		}
 

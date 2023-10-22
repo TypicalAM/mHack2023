@@ -131,13 +131,10 @@ def cities():
     json_dir = os.path.join("backend", "data")
     files = os.listdir(json_dir)
     data = request.get_json()
-    if "region" not in data or "query" not in data: #TODO:Remove
-        print("jeden")
-        print(files)
+    if "region" not in data:
         return make_response("No data provided", HTTPStatus.BAD_REQUEST)
 
     if data["region"]+".json" not in files:
-        print("dwa")
         return make_response("Bad data provided", HTTPStatus.BAD_REQUEST)
 
     json_obj = {}
@@ -146,11 +143,9 @@ def cities():
         with open(path, newline='') as f:
             json_obj = json.load(f)
     except Exception as e:
-        
-        print("trzy", e)
+        print("Cities error: ", e)
         return make_response("Bad data provided", HTTPStatus.BAD_REQUEST)
 
-    print(json_obj)
     return make_response(jsonify(tuple(json_obj.items())[0][1]), HTTPStatus.OK)
 
 @app.route('/api/benefits', methods=['POST'])
