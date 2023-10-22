@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, make_response
+from flask.json import provider
 from flask_cors import CORS, cross_origin
 import requests
 import json
@@ -25,7 +26,7 @@ class Kolejka:
     date: str #data pierwszego wolnego terminu
 
     def __str__(self) -> str:
-        return f"provider: {self.provider}, place: {self.place}, benefit: {self.benefit}, adress: {self.adress}, locality: {self.locality}, phone: {self.phone}, latitude: {self.latitude}, longitude: {self.longitude}, awaiting: {self.awaiting}, average_period: {self.average_period}, date_situation_as_at: {self.date_situation_as_at}, date: {self.date}"
+        return f"provider: {self.provider}, place: {self.place}, benefit: {self.benefit}, adress: {self.address}, locality: {self.locality}, phone: {self.phone}, latitude: {self.latitude}, longitude: {self.longitude}, awaiting: {self.awaiting}, average_period: {self.average_period}, date_situation_as_at: {self.date_situation_as_at}, date: {self.date}"
 
 @dataclass
 class Pages:
@@ -81,16 +82,39 @@ def index():
     json_obj=json.loads(r.text)
     count = json_obj["meta"]["count"]
     current_page_number = json_obj["meta"]["page"]
-    if not count:
-        return make_response("No results found. Please make sure it's valid and try again.", HTTPStatus.NOT_FOUND)
 
     links=json_obj["links"]
     pages = Pages(count, current_page_number, links["next"], links["prev"], links["self"], links["first"], links["last"])
     #json_formatted=json.dumps(json_obj, indent=4)
     data = json_obj["data"]
     for i in data:
-       objects.append(Kolejka(i["attributes"]["provider"], i["attributes"]["place"], i["attributes"]["benefit"], i["attributes"]["address"], i["attributes"]["locality"], i["attributes"]["phone"], i["attributes"]["latitude"], i["attributes"]["longitude"], i["attributes"]["statistics"]["provider-data"]["awaiting"], i["attributes"]["statistics"]["provider-data"]["average-period"],i["attributes"]["dates"]["date-situation-as-at"], i["attributes"]["dates"]["date"]))
-    #return render_template('index.html', errors=errors, objects=objects, pages=pages)
+        atrributes = i.get("attributes", None)
+        if not atrributes:
+            continue
+
+        statistics = atrributes.get("statistics", None)
+        dates = atrributes.get("dates", None)
+        if not statistics or not dates:
+            continue
+
+        provider_data = statistics.get("provider-data", None)
+        if not provider_data:
+            continue
+
+        objects.append(Kolejka(
+            provider=atrributes.get("provider", None),
+            place=atrributes.get("place", None),
+            benefit=atrributes.get("benefit", None),
+            address=atrributes.get("address", None),
+            locality=atrributes.get("locality", None),
+            phone=atrributes.get("phone", None),
+            latitude=atrributes.get("latitude", None),
+            longitude=atrributes.get("longitude", None),
+            awaiting=provider_data["awaiting"],
+            average_period=provider_data["average-period"],
+            date_situation_as_at=dates["date-situation-as-at"],
+            date=dates["date"]
+        ))
     return send_json(pages, objects)
 
 
@@ -107,8 +131,6 @@ def cities():
     json_dir = os.path.join("backend", "data")
     files = os.listdir(json_dir)
     data = request.get_json()
-    print(data)
-    print(data["region"]+".json")
     if "region" not in data or "query" not in data: #TODO:Remove
         print("jeden")
         print(files)
