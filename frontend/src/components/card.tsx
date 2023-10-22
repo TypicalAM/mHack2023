@@ -3,7 +3,7 @@ import { Kolejka } from '../api/api';
 
 export default function Card(props: Kolejka) {
 	return (
-		<div className="flex flex-col justify-center items-center w-5/6 mt-10 bg-back-layer-3 rounded-2xl">
+		<div className="flex flex-col justify-center items-center w-5/6 mt-10 bg-back-layer-1 rounded-2xl">
 			<div className="flex flex-col justify-center items-center">
 				<h1 className="text-m mt-5 overflow-hidden w-full"> {props.place} </h1>
 			</div>

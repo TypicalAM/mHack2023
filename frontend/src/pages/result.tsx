@@ -50,7 +50,7 @@ export default function Result() {
 	}
 
 	return (
-		<main className="bg-back-layer-1 h-screen w-screen flex-col items-center justify-center">
+		<main className="pt-5 bg-back-layer-1 h-screen w-screen flex-col items-center justify-center bg-back-layer-3">
 			{errShow && (
 				<Alert className="">
 					<Terminal className="h-4 w-4" />
@@ -62,12 +62,12 @@ export default function Result() {
 			)}
 
 			<div className="flex flex-col items-center justify-center">
-				<div className="text-2xl text-bold text-center w-full">Wyniki wyszukiwania</div>
+				<div className="text-3xl mb-6 text-bold text-center w-full">Wyniki wyszukiwania</div>
 				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0) ? (<p>Brak wyników</p>) : (
 					<DisplayResults {...data.result} />
 				)}
 				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0 || !data.result.pages.next) || (
-					<Button className = "mt-8" onClick={() => extendList()}>Pokaż więcej</Button>
+					<Button className = "mt-4 mb-8" onClick={() => extendList()}>Pokaż więcej</Button>
 				)}
 			</div>
 		</main >
