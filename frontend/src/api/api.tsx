@@ -61,10 +61,6 @@ function HasLocalCopy(): Boolean {
 	return true
 }
 
-export function GetLocalCopyFake(): ApiResult {
-	return clearlyFakeResult as ApiResult
-}
-
 export function GetLocalCopy(): ApiResult | null {
 	if (!HasLocalCopy()) return null
 	let value = localStorage.getItem(LOCAL_STORAGE_KEY)
@@ -101,10 +97,11 @@ export async function QueryApi(input: Query): Promise<ApiResult | null> {
 	}).then(data => {
 		let stored: StoredResult = { result: data, expiry: Date.now() + 1000 * 60 * 60 * 24 }
 		try {
+			console.log("Saving in local storage!")
 			localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(stored))
 		} catch (e) {
 			console.error("Can't store in local storage", e)
-			return null
+			throw new Error("Can't store in local storage")
 		}
 
 		return data as ApiResult
@@ -113,156 +110,3 @@ export async function QueryApi(input: Query): Promise<ApiResult | null> {
 		throw new Error('There has been a problem with your fetch operation')
 	})
 }
-
-const clearlyFakeResult = {
-	objects: [
-		{
-			address: "ZWYCIĘZCÓW 28/30",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-19",
-			date_situation_as_at: "2023-10-19",
-			latitude: "52.231494",
-			locality: "WARSZAWA PRAGA-POŁUDNIE",
-			longitude: "21.05658",
-			phone: "022 6728149",
-			place: "KOMPLET PRZYCHODNIA STOMATOLOGICZNA",
-			provider: "KOMPLET PRZYCHODNIA STOMATOLOGICZNA"
-		},
-		{
-			address: "GARWOLIŃSKA 16",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-19",
-			date_situation_as_at: "2023-10-19",
-			latitude: "52.2485379",
-			locality: "WARSZAWA PRAGA-POŁUDNIE",
-			longitude: "21.09248",
-			phone: "0226730884",
-			place: "KOMPLET PRZYCHODNIA STOMATOLOGICZNA FILIA NR 1",
-			provider: "KOMPLET PRZYCHODNIA STOMATOLOGICZNA"
-		},
-		{
-			address: "KARMELICKA 26",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-19",
-			date_situation_as_at: "2023-10-19",
-			latitude: "52.250665",
-			locality: "WARSZAWA ŚRÓDMIEŚCIE",
-			longitude: "20.990048",
-			phone: "022635-67-02",
-			place: "GABINET STOMATOLOGICZNY",
-			provider: "NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ CENTRALNA PRZYCHODNIA REHABILITACYJNO-LECZNICZA JEDNOSTKA POLSKIEGO ZWIĄZKU NIEWIDOMYCH"
-		},
-		{
-			address: "KARTEZJUSZA 2",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA DLA DZIECI",
-			date: "2023-10-20",
-			date_situation_as_at: "2023-10-20",
-			latitude: "52.250856",
-			locality: "WARSZAWA BEMOWO",
-			longitude: "20.8951879",
-			phone: "22 4193269",
-			place: "PORADNIA STOMATOLOGICZNA DLA DZIECI",
-			provider: "PRZYCHODNIA LEKARSKA WOJSKOWEJ AKADEMII TECHNICZNEJ SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ"
-		},
-		{
-			address: "KRASINSKIEGO 54/56",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-20",
-			date_situation_as_at: "2023-10-20",
-			latitude: "52.2613379",
-			locality: "WARSZAWA ŻOLIBORZ",
-			longitude: "20.964627",
-			phone: "26 1852652",
-			place: "PORADNIA STOMATOLOGII ZACHOWAWCZEJ",
-			provider: "WOJSKOWY INSTYTUT MEDYCYNY LOTNICZEJ"
-		},
-		{
-			address: "ZAWISZY 16A/A",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-20",
-			date_situation_as_at: "2023-10-20",
-			latitude: "52.2441619",
-			locality: "WARSZAWA WOLA",
-			longitude: "20.9619983",
-			phone: "228881365",
-			place: "GABINET ZAWISZY",
-			provider: "AGADENT PORADNIA STOMATOLOGICZNO-LEKARSKA"
-		},
-		{
-			address: "ALEKSANDRA ŚWIĘTOCHOWSKIEGO 2/U20",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-20",
-			date_situation_as_at: "2023-10-20",
-			latitude: "52.2355532",
-			locality: "WARSZAWA BEMOWO",
-			longitude: "20.8991958",
-			phone: "733-708-708",
-			place: "PORADNIA OGÓLNOSTOMATOLOGICZNA (STOMATOLOGIA ZACHOWAWCZA Z ENDODONCJĄ)",
-			provider: "NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ DENTIK.PL"
-		},
-		{
-			address: "WOLSKA 37",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-20",
-			date_situation_as_at: "2023-10-19",
-			latitude: "52.2344994",
-			locality: "WARSZAWA WOLA",
-			longitude: "20.9720042",
-			phone: "605 06 55 22",
-			place: "PORADNIA STOMATOLOGICZNA",
-			provider: "TOMASZ CHYB USŁUGI STOMATOLOGICZNE"
-		},
-		{
-			address: "MAGICZNA 20/1",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-20",
-			date_situation_as_at: "2023-10-20",
-			latitude: "52.3148099",
-			locality: "WARSZAWA BIAŁOŁĘKA",
-			longitude: "21.061511",
-			phone: "022 4040842",
-			place: "PORADNIA STOMATOLOGII ZACHOWAWCZEJ",
-			provider: "EMDENTIC MATEUSZ KUŚ"
-		},
-		{
-			address: "ALEJA KOMISJI EDUKACJI NARODOWEJ 98/U-30",
-			average_period: 0,
-			awaiting: 0,
-			benefit: "PORADNIA STOMATOLOGICZNA",
-			date: "2023-10-20",
-			date_situation_as_at: "2023-10-19",
-			latitude: "52.1610856",
-			locality: "WARSZAWA URSYNÓW",
-			longitude: "21.0296211",
-			phone: "607626748",
-			place: "AMBULATORIUM SOMATOLOGICZNE",
-			provider: "GABINET STOMATOLOGICZNY MAGDALENA GÓRSKA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
-		}
-	],
-	pages: {
-		count: 163,
-		current: "/app-itl-api/queues?page=1&limit=10&format=json&case=1&benefit=PORADNIA%20STOMATOLOGICZNA&locality=WARSZAWA",
-		first: "/app-itl-api/queues?page=1&limit=10&format=json&case=1&benefit=PORADNIA%20STOMATOLOGICZNA&locality=WARSZAWA",
-		last: "/app-itl-api/queues?page=17&limit=10&format=json&case=1&benefit=PORADNIA%20STOMATOLOGICZNA&locality=WARSZAWA",
-		next: "/app-itl-api/queues?page=2&limit=10&format=json&case=1&benefit=PORADNIA%20STOMATOLOGICZNA&locality=WARSZAWA",
-		previous: null
-	}
-};

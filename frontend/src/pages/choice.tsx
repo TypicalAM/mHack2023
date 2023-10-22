@@ -87,7 +87,12 @@ export default function Choice() {
 
 	const Submit = async () => {
 		console.log("The user has clicked submit, let's hope for the best!")
-		let query = { "benefit": benefitText, "province": codes[provinceText], "locality": localityText }
+		//let query = { "benefit": benefitText, "province": codes[provinceText], "locality": localityText }
+		let query = {
+			"benefit": "PORADNIA STOMATOLOGICZNA",
+			"province": "07",
+			"locality": "WARSZAWA"
+		}
 		let promise = QueryApi(query)
 		console.log("Sent query:", query)
 
