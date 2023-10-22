@@ -8,6 +8,7 @@ import { cn } from '../lib/utils'
 import { QueryApi } from '../api/api'
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert'
 import { Navigate } from 'react-router-dom';
+import { ClimbingBoxLoader } from 'react-spinners'
 
 // hashmap string -> string
 const codes: { [key: string]: string } = {
@@ -87,12 +88,7 @@ export default function Choice() {
 
 	const Submit = async () => {
 		console.log("The user has clicked submit, let's hope for the best!")
-		//let query = { "benefit": benefitText, "province": codes[provinceText], "locality": localityText }
-		let query = {
-			"benefit": "PORADNIA STOMATOLOGICZNA",
-			"province": "07",
-			"locality": "WARSZAWA"
-		}
+		let query = { "benefit": benefitText, "province": codes[provinceText], "locality": localityText }
 		let promise = QueryApi(query)
 		console.log("Sent query:", query)
 
@@ -103,7 +99,7 @@ export default function Choice() {
 		} catch (e) {
 			console.log("Error! in submit, promise rejected")
 			setShowErr(true)
-			setErrMsg("Niele udało się pobrać danych z serwera")
+			setErrMsg("Nie udało się pobrać danych z serwera")
 			return
 		}
 
@@ -135,7 +131,7 @@ export default function Choice() {
 							</Alert >
 						) : (
 							<div className="w-5/6 bg-back-layer-2 p-10 rounded-2xl">
-								{sent ? (<p> cos sie krynci tu </p>) : (
+								{sent ?  <ClimbingBoxLoader></ClimbingBoxLoader>  : (
 									<div className="flex flex-col items-center justify-center mb-8">
 										<h1 className="mt-10 text-2xl font-bold text-center text-text-default mb-3">Wpisz interesującą Cię usługę</h1>
 										<ComboboxDemo onChange={setBenefitText} data={benefitData} />
