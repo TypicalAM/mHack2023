@@ -7,14 +7,14 @@ export default function Card(props: Kolejka) {
 			<div className="flex flex-col justify-center items-center">
 				<h1 className="text-m mt-5 overflow-hidden w-full"> {props.place} </h1>
 			</div>
-			<div className="grid grid-cols-2">
+			<div className="grid grid-cols-2 p-8">
 				<div className="flex flex-col justify-center items-center">
 					<ul className="text-m mt-5">
-					<li className='font-bold'> {props.address} </li>
-						<li> {props.date} </li>
-						
-						<li> {props.phone} </li>
-						<li className='font-bold text-secondary-100'> {props.date_situation_as_at} </li>
+						<li className='font-bold'> {props.address} </li>
+						<li> {props.date_situation_as_at} </li>
+
+						<li> tel: {props.phone} </li>
+						<li className='font-bold text-secondary-100'> wolny termin: {props.date} </li>
 					</ul>
 				</div>
 				<div className="flex flex-col justify-center items-center">

@@ -52,9 +52,9 @@ export default function Result() {
 	return (
 		<main className="bg-back-layer-1 h-screen w-screen flex-col items-center justify-center">
 			{errShow && (
-				<Alert>
+				<Alert className="">
 					<Terminal className="h-4 w-4" />
-					<AlertTitle>Heads up!</AlertTitle>
+					<AlertTitle>Wystąpił błąd!</AlertTitle>
 					<AlertDescription>
 						{errMsg}
 					</AlertDescription>
@@ -66,8 +66,8 @@ export default function Result() {
 				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0) ? (<p>Brak wyników</p>) : (
 					<DisplayResults {...data.result} />
 				)}
-				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0) || (
-					<Button onClick={() => extendList()}>Pokaż więcej</Button>
+				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0 || !data.result.pages.next) || (
+					<Button className = "mt-8" onClick={() => extendList()}>Pokaż więcej</Button>
 				)}
 			</div>
 		</main >
