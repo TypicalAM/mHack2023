@@ -139,7 +139,7 @@ def benefits():
     except TypeError as e:
         return make_response(f"Invalid data provided: {e}", HTTPStatus.BAD_REQUEST)
     try:
-        url=f"https://api.nfz.gov.pl/app-itl-api/queues?page=1&limit=10&format=json&case=1&benefit={input_data.benefit_letters}"
+        url=f"https://api.nfz.gov.pl/app-itl-api/queues?page=1&limit=15&format=json&case=1&benefit={input_data.benefit_letters}"
         r=requests.get(url)
     except:
         return make_response("Unable to get URL. Please make sure it's valid and try again.", HTTPStatus.BAD_REQUEST)
@@ -150,7 +150,8 @@ def benefits():
     json_obj=json.loads(r.text)
     data = json_obj["data"]
     for i in data:
-        benefits.append(i["attributes"]["benefit"])   
+        if i["attributes"]["benefit"] not in benefits:
+            benefits.append(i["attributes"]["benefit"])   
 
     return benefits
 
