@@ -14,7 +14,7 @@ class Kolejka:
     provider: str
     place: str
     benefit: str
-    adress: str
+    address: str
     locality: str
     phone: str
     latitude: str

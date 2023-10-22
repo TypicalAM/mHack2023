@@ -10,7 +10,7 @@ export default function Card(props: Kolejka) {
 			<div className="grid grid-cols-2">
 				<div className="flex flex-col justify-center items-center">
 					<ul className="text-m mt-5">
-					<li> {props.address} </li>
+					<li className='font-bold'> {props.address} </li>
 						<li> {props.date} </li>
 						
 						<li> {props.phone} </li>
@@ -18,7 +18,7 @@ export default function Card(props: Kolejka) {
 					</ul>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img className="p-8" src="./././public/kukon.jpg" />
+					<img className="p-8" alt="logo" src="https://c.animaapp.com/lQghaXZ7/img/untitledkoko-1@2x.png" />
 				</div>
 			</div>
 		</div>
