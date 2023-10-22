@@ -153,7 +153,7 @@ export default function Choice() {
 						{showErr ? (
 							<Alert>
 								<Terminal className="h-4 w-4" />
-								<AlertTitle>Heads up!</AlertTitle>
+								<AlertTitle>Nastąpił błąd!</AlertTitle>
 								<AlertDescription>
 									{errMsg}
 								</AlertDescription>
@@ -164,7 +164,7 @@ export default function Choice() {
 									<ClimbingBoxLoader></ClimbingBoxLoader>
 								</div> : (
 									<div className="flex flex-col items-center justify-center mb-8">
-										<h1 className="mt-10 text-2xl font-bold text-center text-text-default mb-3">Wpisz interesującą Cię usługę</h1>
+										<h1 className="mt-10 text-2xl font-bold text-center text-text-default mb-3">Wprowadź swoje miasto</h1>
 										<ComboboxDemo onChange={setBenefitText} data={benefitData} />
 										<h1 className="mt-6 text-2xl font-bold text-center text-text-default mb-3">Wybierz województwo</h1>
 										<ComboboxDemo onChange={setProvinceText} data={provinceData} />
@@ -189,15 +189,13 @@ export function ComboboxDemo(props: ComboProps) {
 		<Popover open={open} onOpenChange={setOpen}>
 			<PopoverTrigger asChild>
 				<Button variant="outline" role="combobox" aria-expanded={open} className="w-[350px] justify-between">
-					{value
-						? props.data.find((entry: item) => entry.value === value)?.label
-						: "Select framework..."}
+					{(value) ? (value.charAt(0).toUpperCase() + value.slice(1)) : ("Wybierz z listy...")}
 					<ChevronsUpDown className="ml-2 h-4 w-4 shrink-0" />
 				</Button>
 			</PopoverTrigger>
 			<PopoverContent className="w-3/1 bg-primary-30">
 				<Command>
-					<CommandInput placeholder="Search framework..." />
+					<CommandInput placeholder="Wyszukaj..." />
 					<CommandEmpty>No framework found.</CommandEmpty>
 					<CommandGroup>
 						{props.data.map((entry) => (
@@ -217,6 +215,6 @@ export function ComboboxDemo(props: ComboProps) {
 					</CommandGroup>
 				</Command>
 			</PopoverContent>
-		</Popover>
+		</Popover >
 	)
 }
