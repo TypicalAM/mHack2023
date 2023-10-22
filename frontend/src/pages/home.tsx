@@ -1,9 +1,15 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
+import { DeleteLocalCopy } from '../api/api';
 import { Button } from '../components/ui/button';
 
 export default function Home() {
 	const [redirect, setRedirect] = React.useState(false)
+
+	React.useEffect(() => {
+		console.log("Deleting the local result copy")
+		DeleteLocalCopy() // Delete the local copy of the data, if it exists
+	})
 
 	return (
 		< main className="h-screen bg-back-layer-1" >

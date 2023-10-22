@@ -61,9 +61,15 @@ export default function Result() {
 				</Alert >
 			)}
 
-			<h1 className="text-4xl text-center py-8">Wyniki wyszukiwania</h1>
-			<DisplayResults {...data.result} />
-			<Button onClick={() => extendList()}>Pokaż więcej</Button>
-		</main>
+			<div className="flex flex-col items-center justify-center">
+				<h1 className="text-4xl text-center py-8 w-full">Wyniki wyszukiwania</h1>
+				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0) ? (<p>Brak wyników</p>) : (
+					<DisplayResults {...data.result} />
+				)}
+				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0) || (
+					<Button onClick={() => extendList()}>Pokaż więcej</Button>
+				)}
+			</div>
+		</main >
 	)
 }
