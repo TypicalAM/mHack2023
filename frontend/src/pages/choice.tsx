@@ -72,17 +72,40 @@ export default function Choice() {
 	const [provinceText, setProvinceText] = React.useState("")
 	const [localityText, setLocalityText] = React.useState("")
 
+	const fetchCities = async (voivodeship: string) => {
+		const url = 'http://localhost:5000/api/cities'
+		let requestOptions = {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+				"region": voivodeship,
+				"query": "s", // TODO: remove
+			}),
+		}
+
+		fetch(url, requestOptions).then(response => response.json()).then(data => {
+			setLocalities(data.map((city: string) => { return { value: city, label: city } }))
+		}).catch(error => {
+			console.error('There was an error!', error)
+			setShowErr(true)
+			setErrMsg("Nie udało się pobrać danych z serwera")
+		})
+	}
+
 	React.useEffect(() => {
 		// Once the voivodeship is selected, we can fetch the cities
 		if (provinceText === "")
 			return
 
 		console.log(provinceText)
-		if (provinceText === "dolnośląskie") {
-			setLocalities([{ value: "wroclaw", label: "Wrocław" }])
+		if (!(provinceText in codes)) {
+			console.error("Error! Province not found in codes")
+			setShowErr(true)
+			setErrMsg("Nie ma takiego miasta! LOL")
+			return
 		}
 
-		console.log("Fetching localities for", provinceText)
+		fetchCities(provinceText)
 	}, [provinceText])
 
 	const Submit = async () => {
@@ -112,7 +135,7 @@ export default function Choice() {
 		if (!result) {
 			console.log("Error! in submit, null r e turned")
 			setShowErr(true)
-			setErrMsg("Nie u d ało się pobrać danych z serwera")
+			setErrMsg("Nie udało się pobrać danych z serwera")
 			return
 		} else {
 			console.log("Received result in choice!:", result)

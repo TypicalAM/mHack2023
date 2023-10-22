@@ -109,7 +109,7 @@ def cities():
     data = request.get_json()
     print(data)
     print(data["region"]+".json")
-    if "region" not in data or "query" not in data:
+    if "region" not in data or "query" not in data: #TODO:Remove
         print("jeden")
         print(files)
         return make_response("No data provided", HTTPStatus.BAD_REQUEST)
