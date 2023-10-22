@@ -4,7 +4,6 @@ import { Command } from '../components/ui/command'
 import React from 'react'
 import { Button } from '../components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover'
-import { cn } from '../lib/utils'
 import { QueryApi } from '../api/api'
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert'
 import { Navigate } from 'react-router-dom';
@@ -88,7 +87,13 @@ export default function Choice() {
 
 	const Submit = async () => {
 		console.log("The user has clicked submit, let's hope for the best!")
-		let query = { "benefit": benefitText, "province": codes[provinceText], "locality": localityText }
+		//let query = { "benefit": benefitText, "province": codes[provinceText], "locality": localityText, "page": 1 }
+		let query = {
+			"benefit": "PORADNIA STOMATOLOGICZNA",
+			"province": "07",
+			"locality": "WARSZAWA",
+			"page": 1
+		}
 		let promise = QueryApi(query)
 		console.log("Sent query:", query)
 
@@ -101,12 +106,13 @@ export default function Choice() {
 			setShowErr(true)
 			setErrMsg("Nie udało się pobrać danych z serwera")
 			return
+
 		}
 
 		if (!result) {
-			console.log("Error! in submit, null returned")
+			console.log("Error! in submit, null r e turned")
 			setShowErr(true)
-			setErrMsg("Nie udało się pobrać danych z serwera")
+			setErrMsg("Nie u d ało się pobrać danych z serwera")
 			return
 		} else {
 			console.log("Received result in choice!:", result)
@@ -131,9 +137,9 @@ export default function Choice() {
 							</Alert >
 						) : (
 							<div className="w-5/6 bg-back-layer-2 p-10 rounded-2xl">
-								{sent ?  <div className="flex items-center justify-center">
+								{sent ? <div className="flex items-center justify-center">
 									<ClimbingBoxLoader></ClimbingBoxLoader>
-									</div>  : (
+								</div> : (
 									<div className="flex flex-col items-center justify-center mb-8">
 										<h1 className="mt-10 text-2xl font-bold text-center text-text-default mb-3">Wpisz interesującą Cię usługę</h1>
 										<ComboboxDemo onChange={setBenefitText} data={benefitData} />

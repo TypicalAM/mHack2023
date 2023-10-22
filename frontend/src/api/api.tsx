@@ -1,18 +1,16 @@
-const LOCAL_STORAGE_KEY = 'api'
+const LOCAL_STORAGE_KEY = 'api_mojtermin'
 
 export interface Query {
 	benefit: string,
 	province: string,
 	locality: string,
+	page: number
 }
 
 export interface Pages {
 	count: number,
 	next: string | null,
-	previous: string | null,
-	current: string,
-	first: string,
-	last: string | null
+	current: number,
 }
 
 export interface Kolejka {
@@ -35,8 +33,9 @@ export interface ApiResult {
 	objects: Array<Kolejka>
 }
 
-interface StoredResult {
+export interface StoredResult {
 	result: ApiResult,
+	input: Query,
 	expiry: number
 }
 
@@ -61,14 +60,13 @@ function HasLocalCopy(): Boolean {
 	return true
 }
 
-export function GetLocalCopy(): ApiResult | null {
+export function GetLocalCopy(): StoredResult | null {
 	if (!HasLocalCopy()) return null
 	let value = localStorage.getItem(LOCAL_STORAGE_KEY)
 	if (!value) return null
 
 	try {
-		let json = JSON.parse(value) as StoredResult
-		return json.result
+		return JSON.parse(value) as StoredResult
 	} catch (e) {
 		console.error("Can't parse local storage value, removing it", e)
 		localStorage.removeItem(LOCAL_STORAGE_KEY)
@@ -81,7 +79,7 @@ export function DeleteLocalCopy(): void {
 }
 
 
-export async function QueryApi(input: Query): Promise<ApiResult | null> {
+export async function QueryApi(input: Query): Promise<StoredResult | null> {
 	const url = 'http://localhost:5000/api'
 	let requestOptions = {
 		method: 'POST',
@@ -89,13 +87,15 @@ export async function QueryApi(input: Query): Promise<ApiResult | null> {
 		body: JSON.stringify(input),
 	}
 
+	console.log("Fetching from API")
+	console.log(input)
 	return fetch(url, requestOptions).then(response => {
 		if (!response.ok)
 			throw new Error('Network response was not ok')
 
 		return response.json()
 	}).then(data => {
-		let stored: StoredResult = { result: data, expiry: Date.now() + 1000 * 60 * 60 * 24 }
+		let stored: StoredResult = { result: data, expiry: Date.now() + 1000 * 60 * 60 * 24, input: input }
 		try {
 			console.log("Saving in local storage!")
 			localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(stored))
@@ -104,7 +104,7 @@ export async function QueryApi(input: Query): Promise<ApiResult | null> {
 			throw new Error("Can't store in local storage")
 		}
 
-		return data as ApiResult
+		return stored
 	}).catch(error => {
 		console.error('There has been a problem with your fetch operation:', error)
 		throw new Error('There has been a problem with your fetch operation')
