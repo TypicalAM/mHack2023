@@ -112,8 +112,26 @@ def cities():
 @app.route('/api/benefits', methods=['POST'])
 @cross_origin()
 def benefits():
+    data = request.get_json()
+    benefits = []
+    benefits.clear()
+    try:
+        input_data = InputBenefit(**data)
+    except TypeError as e:
+        return make_response(f"Invalid data provided: {e}", HTTPStatus.BAD_REQUEST)
+    try:
+        url=f"https://api.nfz.gov.pl/app-itl-api/queues?page=1&limit=10&format=json&case=1&benefit={input_data.benefit_letters}"
+        r=requests.get(url)
+    except:
+        return make_response("Unable to get URL. Please make sure it's valid and try again.", HTTPStatus.BAD_REQUEST)
     
-        
+    if not r:
+        return make_response("Unable to get URL. Please make sure it's valid and try again.", HTTPStatus.BAD_REQUEST)
+    
+    json_obj=json.loads(r.text)
+    data = json_obj["data"]
+    for i in data:
+        benefits.append(i["attributes"]["benefit"])   
 
     return benefits
 
