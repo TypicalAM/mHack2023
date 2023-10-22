@@ -62,7 +62,7 @@ export default function Result() {
 			)}
 
 			<div className="flex flex-col items-center justify-center">
-				<h1 className="text-4xl text-center py-8 w-full">Wyniki wyszukiwania</h1>
+				<div className="text-2xl text-bold text-center w-full">Wyniki wyszukiwania</div>
 				{(!data || !data.hasOwnProperty('result') || data.result.objects.length === 0) ? (<p>Brak wyników</p>) : (
 					<DisplayResults {...data.result} />
 				)}
