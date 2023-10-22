@@ -124,7 +124,8 @@ export default function Choice() {
 
 		console.log("Sending body", requestOptions.body)
 		fetch(url, requestOptions).then(response => response.json()).then(data => {
-			setBenefits(data)
+			console.log("Setting benefits to", data)
+			setBenefits(data.map((name: string) => { return { value: name, label: name } }))
 		}).catch(error => {
 			console.error('There was an error!', error)
 			setShowErr(true)
