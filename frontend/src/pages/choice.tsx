@@ -1,5 +1,5 @@
 import { CommandEmpty, CommandGroup, CommandInput, CommandItem } from 'cmdk'
-import { AlignCenter, Check, ChevronsUpDown, Terminal } from 'lucide-react'
+import { ChevronsUpDown, Terminal } from 'lucide-react'
 import { Command } from '../components/ui/command'
 import React from 'react'
 import { Button } from '../components/ui/button'
@@ -55,6 +55,7 @@ interface item {
 
 interface ComboProps {
 	onChange: (value: string) => void
+	onType?: any
 	data: item[]
 }
 
@@ -71,6 +72,22 @@ export default function Choice() {
 	const [benefitText, setBenefitText] = React.useState("")
 	const [provinceText, setProvinceText] = React.useState("")
 	const [localityText, setLocalityText] = React.useState("")
+
+	React.useEffect(() => {
+		// Once the voivodeship is selected, we can fetch the cities
+		if (provinceText === "")
+			return
+
+		console.log(provinceText)
+		if (!(provinceText in codes)) {
+			console.error("Error! Province not found in codes")
+			setShowErr(true)
+			setErrMsg("Nie ma takiego miasta! LOL")
+			return
+		}
+
+		fetchCities(provinceText)
+	}, [provinceText])
 
 	const fetchCities = async (voivodeship: string) => {
 		const url = 'http://localhost:5000/api/cities'
@@ -92,21 +109,28 @@ export default function Choice() {
 		})
 	}
 
-	React.useEffect(() => {
-		// Once the voivodeship is selected, we can fetch the cities
-		if (provinceText === "")
-			return
+	const fetchBenefits = async (event: React.FormEvent<HTMLInputElement>) => {
+		console.log("Typed a letter!")
+		const url = 'http://localhost:5000/api/benefits'
 
-		console.log(provinceText)
-		if (!(provinceText in codes)) {
-			console.error("Error! Province not found in codes")
-			setShowErr(true)
-			setErrMsg("Nie ma takiego miasta! LOL")
-			return
+		let target = event.target as any
+		if (!target.value) return
+
+		let requestOptions = {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ "benefit_letters": target.value }),
 		}
 
-		fetchCities(provinceText)
-	}, [provinceText])
+		console.log("Sending body", requestOptions.body)
+		fetch(url, requestOptions).then(response => response.json()).then(data => {
+			setBenefits(data)
+		}).catch(error => {
+			console.error('There was an error!', error)
+			setShowErr(true)
+			setErrMsg("Nie udało się pobrać danych z serwera")
+		})
+	}
 
 	const Submit = async () => {
 		console.log("The user has clicked submit, let's hope for the best!")
@@ -165,11 +189,11 @@ export default function Choice() {
 								</div> : (
 									<div className="flex flex-col items-center justify-center mb-8">
 										<h1 className="mt-10 text-2xl font-bold text-center text-text-default mb-3">Wprowadź swoje miasto</h1>
-										<ComboboxDemo onChange={setBenefitText} data={benefitData} />
+										<ComboBox onChange={setBenefitText} data={benefitData} onType={fetchBenefits} />
 										<h1 className="mt-6 text-2xl font-bold text-center text-text-default mb-3">Wybierz województwo</h1>
-										<ComboboxDemo onChange={setProvinceText} data={provinceData} />
+										<ComboBox onChange={setProvinceText} data={provinceData} />
 										<h1 className="mt-6 h-fill text-2xl font-bold text-center text-text-default mb-3">Podaj interesujące Cię miasto</h1>
-										<ComboboxDemo onChange={setLocalityText} data={localityData} />
+										<ComboBox onChange={setLocalityText} data={localityData} />
 										<Button className="mt-60 w-4/6 p-7" onClick={Submit}>Dalej</Button>
 									</div>
 								)}
@@ -181,7 +205,7 @@ export default function Choice() {
 	)
 }
 
-export function ComboboxDemo(props: ComboProps) {
+export function ComboBox(props: ComboProps) {
 	const [open, setOpen] = React.useState(false)
 	const [value, setValue] = React.useState("")
 
@@ -194,9 +218,9 @@ export function ComboboxDemo(props: ComboProps) {
 				</Button>
 			</PopoverTrigger>
 			<PopoverContent className="w-3/1 bg-primary-30">
-				<Command>
+				<Command onChange={props.onType}>
 					<CommandInput placeholder="Wyszukaj..." />
-					<CommandEmpty>No framework found.</CommandEmpty>
+					<CommandEmpty>Nie znaleziono.</CommandEmpty>
 					<CommandGroup>
 						{props.data.map((entry) => (
 							<CommandItem
