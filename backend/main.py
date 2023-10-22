@@ -30,6 +30,7 @@ class Kolejka:
 @dataclass
 class Pages:
     count: int #liczba wyników
+    current_page_number: int #numer aktualnej strony
     #strony z wynikami
     next: str
     previous: str
@@ -79,11 +80,12 @@ def index():
 
     json_obj=json.loads(r.text)
     count = json_obj["meta"]["count"]
+    current_page_number = json_obj["meta"]["page"]
     if not count:
         return make_response("No results found. Please make sure it's valid and try again.", HTTPStatus.NOT_FOUND)
 
     links=json_obj["links"]
-    pages = Pages(count, links["next"], links["prev"], links["self"], links["first"], links["last"])
+    pages = Pages(count, current_page_number, links["next"], links["prev"], links["self"], links["first"], links["last"])
     #json_formatted=json.dumps(json_obj, indent=4)
     data = json_obj["data"]
     for i in data:
