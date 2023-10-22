@@ -100,21 +100,37 @@ def send_json(pages, objects):
 @app.route('/api/cities', methods=['POST'])
 @cross_origin()
 def cities():
-    with open('backend/wojewodztwa_miasta.csv', newline='') as csvfile:
-        reader = csv.reader(csvfile, delimiter=';')
-        cities = []
-        for row in reader:
-            cities.append([row[1], row[2]])
-        
+    import os
+    json_dir = os.path.join("backend", "data")
+    files = os.listdir(json_dir)
+    data = request.get_json()
+    print(data)
+    print(data["region"]+".json")
+    if "region" not in data or "query" not in data:
+        print("jeden")
+        print(files)
+        return make_response("No data provided", HTTPStatus.BAD_REQUEST)
 
-    return cities
+    if data["region"]+".json" not in files:
+        print("dwa")
+        return make_response("Bad data provided", HTTPStatus.BAD_REQUEST)
+
+    json_obj = {}
+    try:
+        path = os.path.join(json_dir, data["region"]+'.json')
+        with open(path, newline='') as f:
+            json_obj = json.load(f)
+    except Exception as e:
+        
+        print("trzy", e)
+        return make_response("Bad data provided", HTTPStatus.BAD_REQUEST)
+
+    print(json_obj)
+    return make_response(jsonify(tuple(json_obj.items())[0][1]), HTTPStatus.OK)
 
 @app.route('/api/benefits', methods=['POST'])
 @cross_origin()
 def benefits():
-    
-        
-
     return benefits
 
 
