@@ -1,5 +1,5 @@
 import { CommandEmpty, CommandGroup, CommandInput, CommandItem } from 'cmdk'
-import { Check, ChevronsUpDown, Terminal } from 'lucide-react'
+import { AlignCenter, Check, ChevronsUpDown, Terminal } from 'lucide-react'
 import { Command } from '../components/ui/command'
 import React from 'react'
 import { Button } from '../components/ui/button'
@@ -131,7 +131,9 @@ export default function Choice() {
 							</Alert >
 						) : (
 							<div className="w-5/6 bg-back-layer-2 p-10 rounded-2xl">
-								{sent ?  <ClimbingBoxLoader></ClimbingBoxLoader>  : (
+								{sent ?  <div className="flex items-center justify-center">
+									<ClimbingBoxLoader></ClimbingBoxLoader>
+									</div>  : (
 									<div className="flex flex-col items-center justify-center mb-8">
 										<h1 className="mt-10 text-2xl font-bold text-center text-text-default mb-3">Wpisz interesującą Cię usługę</h1>
 										<ComboboxDemo onChange={setBenefitText} data={benefitData} />
