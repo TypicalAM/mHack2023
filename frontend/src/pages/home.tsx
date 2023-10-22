@@ -18,8 +18,8 @@ export default function Home() {
 			) : (
 				<div>
 					<div className="flex flex-col justify-center items-center w-screen h-2/5 bg-primary-40">
-						<img className="mt-16 h-1/2" alt="logo" src="https://c.animaapp.com/lQghaXZ7/img/untitledkoko-1@2x.png" />
-						<h1 className="h-1/2 text-2xl text-default font-bold text-secondary-20"> mTermin </h1>
+						<img className="mt-16 h-1/2" alt="logo" src="./../logo.png" />
+						<h1 className="h-1/2 text-3xl my-3 text-default font-bold text-secondary-20"> mTermin </h1>
 					</div>
 
 					<div className="flex flex-col mt-6 h-1/2 justify-center items-center w-screen h-fill">

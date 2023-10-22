@@ -18,7 +18,7 @@ export default function Card(props: Kolejka) {
 					</ul>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img className="p-8" alt="logo" src="https://c.animaapp.com/lQghaXZ7/img/untitledkoko-1@2x.png" />
+					<img className="p-8" alt="logo" src="./../logo.png" />
 				</div>
 			</div>
 		</div>
