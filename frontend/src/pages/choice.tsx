@@ -132,11 +132,11 @@ export default function Choice() {
 							<div className="w-5/6 bg-back-layer-2 p-10 rounded-2xl">
 								{sent ? (<p> cos sie krynci tu </p>) : (
 									<div className="flex flex-col items-center justify-center mb-8">
-										<h1 className="mt-10 text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
+										<h1 className="mt-10 text-2xl font-bold text-center text-text-default mb-3">Wpisz interesującą Cię usługę</h1>
 										<ComboboxDemo onChange={setBenefitText} data={benefitData} />
-										<h1 className="mt-6 text-2xl font-bold text-center text-text-default">Wybierz województwo</h1>
+										<h1 className="mt-6 text-2xl font-bold text-center text-text-default mb-3">Wybierz województwo</h1>
 										<ComboboxDemo onChange={setProvinceText} data={provinceData} />
-										<h1 className="mt-6 h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
+										<h1 className="mt-6 h-fill text-2xl font-bold text-center text-text-default mb-3">Podaj interesujące Cię miasto</h1>
 										<ComboboxDemo onChange={setLocalityText} data={localityData} />
 										<Button className="mt-60 w-4/6 p-7" onClick={Submit}>Dalej</Button>
 									</div>
@@ -156,14 +156,14 @@ export function ComboboxDemo(props: ComboProps) {
 	return (
 		<Popover open={open} onOpenChange={setOpen}>
 			<PopoverTrigger asChild>
-				<Button variant="outline" role="combobox" aria-expanded={open} className="w-[200px] justify-between">
+				<Button variant="outline" role="combobox" aria-expanded={open} className="w-[350px] justify-between">
 					{value
 						? props.data.find((entry: item) => entry.value === value)?.label
 						: "Select framework..."}
 					<ChevronsUpDown className="ml-2 h-4 w-4 shrink-0" />
 				</Button>
 			</PopoverTrigger>
-			<PopoverContent className="w-[200px] bg-primary-30">
+			<PopoverContent className="w-3/1 bg-primary-30">
 				<Command>
 					<CommandInput placeholder="Search framework..." />
 					<CommandEmpty>No framework found.</CommandEmpty>
