@@ -114,7 +114,7 @@ export default function Choice() {
 	}
 
 	return (
-		<main>
+		<main className="h-screen bg-back-layer-1">
 			{
 				redirect ? (
 					<Navigate to="/result" />
@@ -129,16 +129,16 @@ export default function Choice() {
 								</AlertDescription>
 							</Alert >
 						) : (
-							<div>
+							<div className="w-5/6 bg-back-layer-2 p-10 rounded-2xl">
 								{sent ? (<p> cos sie krynci tu </p>) : (
-									<div className="flex flex-col items-center justify-center">
-										<h1 className="text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
+									<div className="flex flex-col items-center justify-center mb-8">
+										<h1 className="mt-10 text-2xl font-bold text-center text-text-default">Wpisz itneresującą Cię usługę</h1>
 										<ComboboxDemo onChange={setBenefitText} data={benefitData} />
-										<h1 className="text-2xl font-bold text-center text-text-default">Wybierz województwo</h1>
+										<h1 className="mt-6 text-2xl font-bold text-center text-text-default">Wybierz województwo</h1>
 										<ComboboxDemo onChange={setProvinceText} data={provinceData} />
-										<h1 className="h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
+										<h1 className="mt-6 h-fill text-2xl font-bold text-center text-text-default">Podaj interesujące Cię miasto</h1>
 										<ComboboxDemo onChange={setLocalityText} data={localityData} />
-										<Button onClick={Submit}>Dalej</Button>
+										<Button className="mt-60 w-4/6 p-7" onClick={Submit}>Dalej</Button>
 									</div>
 								)}
 							</div>
@@ -160,10 +160,10 @@ export function ComboboxDemo(props: ComboProps) {
 					{value
 						? props.data.find((entry: item) => entry.value === value)?.label
 						: "Select framework..."}
-					<ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+					<ChevronsUpDown className="ml-2 h-4 w-4 shrink-0" />
 				</Button>
 			</PopoverTrigger>
-			<PopoverContent className="w-[200px] p-0">
+			<PopoverContent className="w-[200px] bg-primary-30">
 				<Command>
 					<CommandInput placeholder="Search framework..." />
 					<CommandEmpty>No framework found.</CommandEmpty>
@@ -179,12 +179,6 @@ export function ComboboxDemo(props: ComboProps) {
 									setOpen(false)
 								}}
 							>
-								<Check
-									className={cn(
-										"mr-2 h-4 w-4",
-										value === entry.value ? "opacity-100" : "opacity-0"
-									)}
-								/>
 								{entry.label}
 							</CommandItem>
 						))}
