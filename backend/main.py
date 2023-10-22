@@ -47,6 +47,7 @@ class Input:
     benefit: str
     province: str
     locality: str
+    page: int
 
 @dataclass
 class InputBenefit:
@@ -68,7 +69,7 @@ def index():
 
     objects.clear()
     try:
-        url=f"https://api.nfz.gov.pl/app-itl-api/queues?page=1&limit=10&format=json&case=1&benefit={input_data.benefit}&provincy={input_data.province}&locality={input_data.locality}"
+        url=f"https://api.nfz.gov.pl/app-itl-api/queues?page={input_data.page}&limit=5&format=json&case=1&benefit={input_data.benefit}&provincy={input_data.province}&locality={input_data.locality}"
         r=requests.get(url)
     except:
         return make_response("Unable to get URL. Please make sure it's valid and try again.", HTTPStatus.BAD_REQUEST)
